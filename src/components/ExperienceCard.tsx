@@ -18,7 +18,7 @@ const ExperienceCard = ({
   description,
   duration,
   groupSize,
-  price,
+  
   whatsappMessage,
   delay = 0,
 }: ExperienceCardProps) => {
