@@ -1,7 +1,7 @@
 import heroImg from "@/assets/hero-boat.jpg";
 import { Anchor, MessageCircle } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/35699999999?text=Hi!%20I'm%20staying%20at%20your%20Airbnb%20and%20I'd%20like%20to%20book%20a%20trip!";
+const WHATSAPP_URL = "https://wa.me/35699822911?text=Hi!%20I'd%20like%20to%20book%20a%20trip!";
 
 const HeroSection = () => {
   return (
@@ -29,7 +29,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="text-sand/90 text-lg md:text-xl font-body font-light mb-10 max-w-xl mx-auto leading-relaxed">
-          Unforgettable boat trips & bar crawls curated exclusively for our Airbnb guests. Book instantly via WhatsApp.
+          Unforgettable boat trips & private adventures for our guests. Book instantly via WhatsApp.
         </p>
         
         <a
