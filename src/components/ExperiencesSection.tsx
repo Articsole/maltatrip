@@ -1,45 +1,41 @@
 import boatTrip from "@/assets/boat-trip.jpg";
-import barCrawl from "@/assets/bar-crawl.jpg";
 import sunsetCruise from "@/assets/sunset-cruise.jpg";
 import partyBoat from "@/assets/party-boat.jpg";
+import barCrawl from "@/assets/bar-crawl.jpg";
 import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
   {
     image: boatTrip,
-    title: "Blue Lagoon Boat Trip",
-    description: "Sail to the iconic Blue Lagoon in Comino. Crystal clear turquoise waters, snorkeling, and a BBQ lunch on board.",
+    title: "Boat Tour",
+    description: "Explore Malta's stunning coastline, hidden caves, and crystal clear waters on a guided group boat tour.",
     duration: "Full Day",
     groupSize: "Up to 12",
-    price: "€75/person",
-    whatsappMessage: "Hi! I'd like to book the Blue Lagoon Boat Trip 🚤",
+    whatsappMessage: "Hi! I'd like to book a Boat Tour 🚤",
   },
   {
     image: sunsetCruise,
-    title: "Sunset Champagne Cruise",
-    description: "A romantic sunset cruise along the Valletta harbour with champagne, canapés, and breathtaking golden hour views.",
-    duration: "3 Hours",
-    groupSize: "Up to 8",
-    price: "€95/person",
-    whatsappMessage: "Hi! I'd like to book the Sunset Champagne Cruise 🌅",
+    title: "Private Boat Tour",
+    description: "A fully private boat experience tailored to you. Choose your route, stops, and pace for the ultimate Malta adventure.",
+    duration: "Flexible",
+    groupSize: "Private",
+    whatsappMessage: "Hi! I'd like to book a Private Boat Tour 🛥️",
   },
   {
     image: partyBoat,
-    title: "Party Boat Adventure",
-    description: "The ultimate party on water! DJ, open bar, swimming stops at hidden caves and the Blue Lagoon.",
-    duration: "6 Hours",
+    title: "Bus Tour",
+    description: "Discover Malta's historic temples, charming villages, and panoramic viewpoints on a comfortable guided bus tour.",
+    duration: "Full Day",
     groupSize: "Up to 20",
-    price: "€65/person",
-    whatsappMessage: "Hi! I'd like to book the Party Boat Adventure 🎉",
+    whatsappMessage: "Hi! I'd like to book a Bus Tour 🚌",
   },
   {
     image: barCrawl,
-    title: "Valletta Bar Crawl",
-    description: "Discover Malta's best rooftop bars and hidden speakeasies in Valletta. Includes welcome shots and skip-the-line entry.",
-    duration: "4 Hours",
-    groupSize: "Up to 15",
-    price: "€45/person",
-    whatsappMessage: "Hi! I'd like to book the Valletta Bar Crawl 🍸",
+    title: "Quad Tour",
+    description: "Hit the off-road trails and explore Malta's rugged countryside and coastal paths on an exciting quad bike adventure.",
+    duration: "Half Day",
+    groupSize: "Up to 10",
+    whatsappMessage: "Hi! I'd like to book a Quad Tour 🏍️",
   },
 ];
 

@@ -6,12 +6,11 @@ interface ExperienceCardProps {
   description: string;
   duration: string;
   groupSize: string;
-  price: string;
   whatsappMessage: string;
   delay?: number;
 }
 
-const WHATSAPP_NUMBER = "35699999999";
+const WHATSAPP_NUMBER = "35699822911";
 
 const ExperienceCard = ({
   image,
@@ -37,9 +36,6 @@ const ExperienceCard = ({
           loading="lazy"
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
         />
-        <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground font-body font-bold text-sm px-4 py-1.5 rounded-full">
-          {price}
-        </div>
       </div>
 
       <div className="p-6">
