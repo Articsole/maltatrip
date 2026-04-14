@@ -3,61 +3,72 @@ import sunsetCruise from "@/assets/sunset-cruise.jpg";
 import partyBoat from "@/assets/party-boat.jpg";
 import barCrawl from "@/assets/bar-crawl.jpg";
 import ExperienceCard from "./ExperienceCard";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const experiences = [
   {
     image: boatTrip,
-    title: "Boat Tour",
-    description: "Explore Malta's stunning coastline, hidden caves, and crystal clear waters on a guided group boat tour.",
-    duration: "Full Day",
-    groupSize: "Up to 12",
-    whatsappMessage: "Hi! I'd like to book a Boat Tour 🚤",
+    titleKey: "exp.boatTour.title",
+    descKey: "exp.boatTour.desc",
+    durationKey: "exp.boatTour.duration",
+    groupKey: "exp.boatTour.group",
+    waKey: "exp.boatTour.wa",
   },
   {
     image: sunsetCruise,
-    title: "Private Boat Tour",
-    description: "A fully private boat experience tailored to you. Choose your route, stops, and pace for the ultimate Malta adventure.",
-    duration: "Flexible",
-    groupSize: "Private",
-    whatsappMessage: "Hi! I'd like to book a Private Boat Tour 🛥️",
+    titleKey: "exp.privateBoat.title",
+    descKey: "exp.privateBoat.desc",
+    durationKey: "exp.privateBoat.duration",
+    groupKey: "exp.privateBoat.group",
+    waKey: "exp.privateBoat.wa",
   },
   {
     image: partyBoat,
-    title: "Bus Tour",
-    description: "Discover Malta's historic temples, charming villages, and panoramic viewpoints on a comfortable guided bus tour.",
-    duration: "Full Day",
-    groupSize: "Up to 20",
-    whatsappMessage: "Hi! I'd like to book a Bus Tour 🚌",
+    titleKey: "exp.busTour.title",
+    descKey: "exp.busTour.desc",
+    durationKey: "exp.busTour.duration",
+    groupKey: "exp.busTour.group",
+    subOptions: [
+      { labelKey: "exp.busTour.opt.north", waKey: "exp.busTour.wa.north" },
+      { labelKey: "exp.busTour.opt.south", waKey: "exp.busTour.wa.south" },
+      { labelKey: "exp.busTour.opt.gozo", waKey: "exp.busTour.wa.gozo" },
+    ],
   },
   {
     image: barCrawl,
-    title: "Quad Tour",
-    description: "Hit the off-road trails and explore Malta's rugged countryside and coastal paths on an exciting quad bike adventure.",
-    duration: "Half Day",
-    groupSize: "Up to 10",
-    whatsappMessage: "Hi! I'd like to book a Quad Tour 🏍️",
+    titleKey: "exp.gozoTour.title",
+    descKey: "exp.gozoTour.desc",
+    durationKey: "exp.gozoTour.duration",
+    groupKey: "exp.gozoTour.group",
+    subOptions: [
+      { labelKey: "exp.gozoTour.opt.quad", waKey: "exp.gozoTour.wa.quad" },
+      { labelKey: "exp.gozoTour.opt.buggy", waKey: "exp.gozoTour.wa.buggy" },
+      { labelKey: "exp.gozoTour.opt.jeep", waKey: "exp.gozoTour.wa.jeep" },
+    ],
   },
 ];
 
 const ExperiencesSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 px-6 bg-background" id="experiences">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
           <span className="text-primary uppercase tracking-[0.2em] text-sm font-body font-semibold">
-            Our Experiences
+            {t("exp.label")}
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3">
-            Choose Your Adventure
+            {t("exp.title")}
           </h2>
           <p className="text-muted-foreground font-body mt-4 max-w-lg mx-auto">
-            Hand-picked experiences to make your Malta stay unforgettable. Tap to book instantly.
+            {t("exp.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {experiences.map((exp, i) => (
-            <ExperienceCard key={exp.title} {...exp} delay={i * 150} />
+            <ExperienceCard key={exp.titleKey} {...exp} delay={i * 150} />
           ))}
         </div>
       </div>
