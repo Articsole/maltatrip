@@ -1,9 +1,12 @@
 import heroImg from "@/assets/hero-boat.jpg";
 import { Anchor, MessageCircle } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const WHATSAPP_URL = "https://wa.me/35699822911?text=Hi!%20I'd%20like%20to%20book%20a%20trip!";
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       <img
@@ -19,17 +22,17 @@ const HeroSection = () => {
         <div className="flex items-center justify-center gap-2 mb-6">
           <Anchor className="w-5 h-5 text-sunset" />
           <span className="text-sand uppercase tracking-[0.25em] text-sm font-body font-medium">
-            Exclusive Guest Experiences
+            {t("hero.badge")}
           </span>
         </div>
         
         <h1 className="font-display text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6">
-          Explore Malta
-          <span className="block text-sunset">By Sea & Night</span>
+          {t("hero.title1")}
+          <span className="block text-sunset">{t("hero.title2")}</span>
         </h1>
         
         <p className="text-sand/90 text-lg md:text-xl font-body font-light mb-10 max-w-xl mx-auto leading-relaxed">
-          Unforgettable boat trips & private adventures for our guests. Book instantly via WhatsApp.
+          {t("hero.subtitle")}
         </p>
         
         <a
@@ -39,7 +42,7 @@ const HeroSection = () => {
           className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-primary-foreground font-body font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
         >
           <MessageCircle className="w-6 h-6" />
-          Book via WhatsApp
+          {t("hero.cta")}
         </a>
       </div>
 
