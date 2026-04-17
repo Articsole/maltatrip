@@ -1,14 +1,14 @@
-import { createContext, useState, useCallback, ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, ReactNode } from "react";
 import { Language, translations } from "./translations";
 
-export interface LanguageContextType {
+interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
   isRTL: boolean;
 }
 
-export const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>("en");
@@ -25,4 +25,11 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       <div dir={isRTL ? "rtl" : "ltr"}>{children}</div>
     </LanguageContext.Provider>
   );
+};
+
+// eslint-disable-next-line react-refresh/only-export-components
+export const useLanguage = () => {
+  const ctx = useContext(LanguageContext);
+  if (!ctx) throw new Error("useLanguage must be used within LanguageProvider");
+  return ctx;
 };
