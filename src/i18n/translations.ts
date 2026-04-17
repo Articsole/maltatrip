@@ -1,4 +1,4 @@
-export type Language = "en" | "nl" | "ar" | "de" | "it";
+export type Language = "en" | "nl" | "ar" | "de" | "it" | "fr";
 
 export const languageNames: Record<Language, string> = {
   en: "English",
@@ -6,6 +6,7 @@ export const languageNames: Record<Language, string> = {
   ar: "العربية",
   de: "Deutsch",
   it: "Italiano",
+  fr: "Français",
 };
 
 export const translations: Record<Language, Record<string, string>> = {
@@ -32,7 +33,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Boat Tour
     "exp.boatTour.title": "Boat Tour",
-    "exp.boatTour.desc": "Explore Malta's stunning coastline, hidden caves, and crystal clear waters on a guided group boat tour.",
+    "exp.boatTour.desc": "Discover the magic of Malta from the water on an unforgettable boat trip along the breathtaking coastline. Be amazed by hidden caves, impressive rock formations, and the crystal-clear waters of the Blue Lagoon, perfect for swimming and relaxing. Choose the day trip to Gozo, Comino, and the Blue Lagoon and experience the best of multiple islands in one day. Enjoy sun, sea, and stunning views while adventuring with a fun group. The perfect mix of relaxation, nature, and discovery!",
     "exp.boatTour.duration": "Full Day",
     "exp.boatTour.group": "Up to 12",
     "exp.boatTour.wa": "Hi! I'd like to book a Boat Tour 🚤",
@@ -116,7 +117,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.back": "← Terug",
     
     "exp.boatTour.title": "Boottocht",
-    "exp.boatTour.desc": "Verken Malta's prachtige kustlijn, verborgen grotten en kristalhelder water op een begeleide groepsboottocht.",
+    "exp.boatTour.desc": "Ontdek de magie van Malta vanaf het water tijdens een onvergetelijke boottocht langs de adembenemende kustlijn. Laat je verrassen door verborgen grotten, indrukwekkende rotsformaties en het kristalheldere water van de Blue Lagoon, perfect om in te zwemmen en te ontspannen. Kies je voor de dagtrip naar Gozo, Comino en de Blue Lagoon, dan ervaar je het beste van meerdere eilanden in één dag. Geniet van zon, zee en prachtige uitzichten terwijl je samen met een gezellige groep op avontuur gaat. Een ideale mix van ontspanning, natuur en ontdekking!",
     "exp.boatTour.duration": "Hele dag",
     "exp.boatTour.group": "Tot 12 personen",
     "exp.boatTour.wa": "Hoi! Ik wil graag een Boottocht boeken 🚤",
@@ -194,7 +195,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.back": "→ رجوع",
     
     "exp.boatTour.title": "جولة بالقارب",
-    "exp.boatTour.desc": "استكشف ساحل مالطا المذهل والكهوف المخفية والمياه الصافية في جولة بحرية جماعية بصحبة مرشد.",
+    "exp.boatTour.desc": "اكتشف سحر مالطا من المياه في رحلة بحرية لا تُنسى على طول الساحل الخلاب. ستندهش من الكهوف المخفية والتشكيلات الصخرية المذهلة والمياه الصافية في البلو لاجون، المثالية للسباحة والاسترخاء. اختر الرحلة اليومية إلى غوزو وكومينو والبلو لاجون لتجربة أفضل ما في الجزر المتعددة في يوم واحد. استمتع بالشمس والبحر والمناظر الخلابة مع مجموعة مرحة. مزيج مثالي من الاسترخاء والطبيعة والاكتشاف!",
     "exp.boatTour.duration": "يوم كامل",
     "exp.boatTour.group": "حتى 12",
     "exp.boatTour.wa": "مرحبا! أود حجز جولة بالقارب 🚤",
@@ -272,7 +273,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.back": "← Zurück",
     
     "exp.boatTour.title": "Bootstour",
-    "exp.boatTour.desc": "Erkunde Maltas atemberaubende Küste, versteckte Höhlen und kristallklares Wasser auf einer geführten Gruppenbootstour.",
+    "exp.boatTour.desc": "Entdecke die Magie Maltas vom Wasser aus auf einer unvergesslichen Bootstour entlang der atemberaubenden Küste. Lass dich von versteckten Höhlen, beeindruckenden Felsformationen und dem kristallklaren Wasser der Blauen Lagune verzaubern – perfekt zum Schwimmen und Entspannen. Wähle den Tagesausflug nach Gozo, Comino und zur Blauen Lagune und erlebe das Beste aus mehreren Inseln an einem Tag. Genieße Sonne, Meer und herrliche Aussichten in einer geselligen Gruppe. Die ideale Mischung aus Entspannung, Natur und Entdeckung!",
     "exp.boatTour.duration": "Ganzer Tag",
     "exp.boatTour.group": "Bis zu 12",
     "exp.boatTour.wa": "Hi! Ich möchte eine Bootstour buchen 🚤",
@@ -350,7 +351,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.back": "← Indietro",
     
     "exp.boatTour.title": "Tour in Barca",
-    "exp.boatTour.desc": "Esplora la splendida costa di Malta, le grotte nascoste e le acque cristalline in un tour in barca di gruppo con guida.",
+    "exp.boatTour.desc": "Scopri la magia di Malta dall'acqua in un'indimenticabile gita in barca lungo la mozzafiato costa. Lasciati sorprendere da grotte nascoste, imponenti formazioni rocciose e dalle acque cristalline della Blue Lagoon, perfette per nuotare e rilassarsi. Scegli la gita giornaliera a Gozo, Comino e Blue Lagoon e vivi il meglio di più isole in un solo giorno. Goditi sole, mare e panorami spettacolari insieme a un gruppo allegro. Un mix ideale di relax, natura e scoperta!",
     "exp.boatTour.duration": "Giornata Intera",
     "exp.boatTour.group": "Fino a 12",
     "exp.boatTour.wa": "Ciao! Vorrei prenotare un Tour in Barca 🚤",
