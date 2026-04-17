@@ -1,4 +1,4 @@
-export type Language = "en" | "nl" | "ar" | "de" | "it";
+export type Language = "en" | "nl" | "ar" | "de" | "it" | "fr";
 
 export const languageNames: Record<Language, string> = {
   en: "English",
@@ -6,6 +6,7 @@ export const languageNames: Record<Language, string> = {
   ar: "العربية",
   de: "Deutsch",
   it: "Italiano",
+  fr: "Français",
 };
 
 export const translations: Record<Language, Record<string, string>> = {
@@ -32,7 +33,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Boat Tour
     "exp.boatTour.title": "Boat Tour",
-    "exp.boatTour.desc": "Explore Malta's stunning coastline, hidden caves, and crystal clear waters on a guided group boat tour.",
+    "exp.boatTour.desc": "Discover the magic of Malta from the water on an unforgettable boat trip along the breathtaking coastline. Be amazed by hidden caves, impressive rock formations, and the crystal-clear waters of the Blue Lagoon, perfect for swimming and relaxing. Choose the day trip to Gozo, Comino, and the Blue Lagoon and experience the best of multiple islands in one day. Enjoy sun, sea, and stunning views while adventuring with a fun group. The perfect mix of relaxation, nature, and discovery!",
     "exp.boatTour.duration": "Full Day",
     "exp.boatTour.group": "Up to 12",
     "exp.boatTour.wa": "Hi! I'd like to book a Boat Tour 🚤",
@@ -116,7 +117,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.back": "← Terug",
     
     "exp.boatTour.title": "Boottocht",
-    "exp.boatTour.desc": "Verken Malta's prachtige kustlijn, verborgen grotten en kristalhelder water op een begeleide groepsboottocht.",
+    "exp.boatTour.desc": "Ontdek de magie van Malta vanaf het water tijdens een onvergetelijke boottocht langs de adembenemende kustlijn. Laat je verrassen door verborgen grotten, indrukwekkende rotsformaties en het kristalheldere water van de Blue Lagoon, perfect om in te zwemmen en te ontspannen. Kies je voor de dagtrip naar Gozo, Comino en de Blue Lagoon, dan ervaar je het beste van meerdere eilanden in één dag. Geniet van zon, zee en prachtige uitzichten terwijl je samen met een gezellige groep op avontuur gaat. Een ideale mix van ontspanning, natuur en ontdekking!",
     "exp.boatTour.duration": "Hele dag",
     "exp.boatTour.group": "Tot 12 personen",
     "exp.boatTour.wa": "Hoi! Ik wil graag een Boottocht boeken 🚤",
@@ -194,7 +195,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.back": "→ رجوع",
     
     "exp.boatTour.title": "جولة بالقارب",
-    "exp.boatTour.desc": "استكشف ساحل مالطا المذهل والكهوف المخفية والمياه الصافية في جولة بحرية جماعية بصحبة مرشد.",
+    "exp.boatTour.desc": "اكتشف سحر مالطا من المياه في رحلة بحرية لا تُنسى على طول الساحل الخلاب. ستندهش من الكهوف المخفية والتشكيلات الصخرية المذهلة والمياه الصافية في البلو لاجون، المثالية للسباحة والاسترخاء. اختر الرحلة اليومية إلى غوزو وكومينو والبلو لاجون لتجربة أفضل ما في الجزر المتعددة في يوم واحد. استمتع بالشمس والبحر والمناظر الخلابة مع مجموعة مرحة. مزيج مثالي من الاسترخاء والطبيعة والاكتشاف!",
     "exp.boatTour.duration": "يوم كامل",
     "exp.boatTour.group": "حتى 12",
     "exp.boatTour.wa": "مرحبا! أود حجز جولة بالقارب 🚤",
@@ -272,7 +273,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.back": "← Zurück",
     
     "exp.boatTour.title": "Bootstour",
-    "exp.boatTour.desc": "Erkunde Maltas atemberaubende Küste, versteckte Höhlen und kristallklares Wasser auf einer geführten Gruppenbootstour.",
+    "exp.boatTour.desc": "Entdecke die Magie Maltas vom Wasser aus auf einer unvergesslichen Bootstour entlang der atemberaubenden Küste. Lass dich von versteckten Höhlen, beeindruckenden Felsformationen und dem kristallklaren Wasser der Blauen Lagune verzaubern – perfekt zum Schwimmen und Entspannen. Wähle den Tagesausflug nach Gozo, Comino und zur Blauen Lagune und erlebe das Beste aus mehreren Inseln an einem Tag. Genieße Sonne, Meer und herrliche Aussichten in einer geselligen Gruppe. Die ideale Mischung aus Entspannung, Natur und Entdeckung!",
     "exp.boatTour.duration": "Ganzer Tag",
     "exp.boatTour.group": "Bis zu 12",
     "exp.boatTour.wa": "Hi! Ich möchte eine Bootstour buchen 🚤",
@@ -350,7 +351,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.back": "← Indietro",
     
     "exp.boatTour.title": "Tour in Barca",
-    "exp.boatTour.desc": "Esplora la splendida costa di Malta, le grotte nascoste e le acque cristalline in un tour in barca di gruppo con guida.",
+    "exp.boatTour.desc": "Scopri la magia di Malta dall'acqua in un'indimenticabile gita in barca lungo la mozzafiato costa. Lasciati sorprendere da grotte nascoste, imponenti formazioni rocciose e dalle acque cristalline della Blue Lagoon, perfette per nuotare e rilassarsi. Scegli la gita giornaliera a Gozo, Comino e Blue Lagoon e vivi il meglio di più isole in un solo giorno. Goditi sole, mare e panorami spettacolari insieme a un gruppo allegro. Un mix ideale di relax, natura e scoperta!",
     "exp.boatTour.duration": "Giornata Intera",
     "exp.boatTour.group": "Fino a 12",
     "exp.boatTour.wa": "Ciao! Vorrei prenotare un Tour in Barca 🚤",
@@ -408,5 +409,83 @@ export const translations: Record<Language, Record<string, string>> = {
     "footer.desc": "Tour in barca e avventure esclusive per i nostri ospiti. Creato con amore a Malta 🇲🇹",
     "footer.whatsapp": "Domande? Chatta con noi su WhatsApp",
     "footer.rights": "Malta Experiences. Tutti i diritti riservati.",
+  },
+  fr: {
+    "nav.experiences": "Expériences",
+    "nav.howItWorks": "Comment ça marche",
+    "nav.nightlife": "Vie Nocturne & Restaurants",
+
+    "hero.badge": "Expériences Exclusives pour Invités",
+    "hero.title1": "Explorez Malte",
+    "hero.title2": "Par Mer & Terre",
+    "hero.subtitle": "Excursions en bateau et aventures privées inoubliables pour nos invités. Réservez instantanément via WhatsApp.",
+    "hero.cta": "Réserver via WhatsApp",
+
+    "exp.label": "Nos Expériences",
+    "exp.title": "Choisissez Votre Aventure",
+    "exp.subtitle": "Expériences soigneusement sélectionnées pour rendre votre séjour à Malte inoubliable. Touchez pour réserver instantanément.",
+    "exp.bookNow": "Réserver",
+    "exp.selectOption": "Sélectionnez une option :",
+    "exp.back": "← Retour",
+
+    "exp.boatTour.title": "Excursion en Bateau",
+    "exp.boatTour.desc": "Découvrez la magie de Malte depuis l'eau lors d'une excursion en bateau inoubliable le long de la côte à couper le souffle. Laissez-vous surprendre par des grottes cachées, d'impressionnantes formations rocheuses et les eaux cristallines du Blue Lagoon, parfaites pour la baignade et la détente. Optez pour l'excursion d'une journée à Gozo, Comino et au Blue Lagoon et vivez le meilleur de plusieurs îles en une seule journée. Profitez du soleil, de la mer et de vues magnifiques en compagnie d'un groupe convivial. Un mélange idéal de détente, de nature et de découverte !",
+    "exp.boatTour.duration": "Journée Complète",
+    "exp.boatTour.group": "Jusqu'à 12",
+    "exp.boatTour.wa": "Bonjour ! Je voudrais réserver une Excursion en Bateau 🚤",
+
+    "exp.privateBoat.title": "Excursion en Bateau Privée",
+    "exp.privateBoat.desc": "Une expérience en bateau entièrement privée sur mesure. Choisissez votre itinéraire, vos arrêts et votre rythme pour l'aventure ultime à Malte.",
+    "exp.privateBoat.duration": "Flexible",
+    "exp.privateBoat.group": "Privé",
+    "exp.privateBoat.wa": "Bonjour ! Je voudrais réserver une Excursion en Bateau Privée 🛥️",
+
+    "exp.busTour.title": "Excursion en Bus",
+    "exp.busTour.desc": "Découvrez les temples historiques de Malte, ses villages charmants et ses points de vue panoramiques lors d'une excursion confortable en bus avec guide.",
+    "exp.busTour.duration": "Journée Complète",
+    "exp.busTour.group": "Jusqu'à 20",
+    "exp.busTour.opt.north": "Tour du Nord de Malte",
+    "exp.busTour.opt.south": "Tour du Sud de Malte",
+    "exp.busTour.opt.gozo": "Tour en Bus de Gozo",
+    "exp.busTour.wa.north": "Bonjour ! Je voudrais réserver un Tour en Bus du Nord de Malte 🚌",
+    "exp.busTour.wa.south": "Bonjour ! Je voudrais réserver un Tour en Bus du Sud de Malte 🚌",
+    "exp.busTour.wa.gozo": "Bonjour ! Je voudrais réserver un Tour en Bus de Gozo 🚌",
+
+    "exp.gozoTour.title": "Tour de Gozo",
+    "exp.gozoTour.desc": "Explorez la magnifique île de Gozo avec des aventures tout-terrain palpitantes et des vues côtières à couper le souffle.",
+    "exp.gozoTour.duration": "Journée Complète",
+    "exp.gozoTour.group": "Jusqu'à 10",
+    "exp.gozoTour.opt.quad": "Tour en Quad de Gozo",
+    "exp.gozoTour.opt.buggy": "Tour en Buggy de Gozo",
+    "exp.gozoTour.opt.jeep": "Tour en Jeep de Gozo",
+    "exp.gozoTour.wa.quad": "Bonjour ! Je voudrais réserver un Tour en Quad de Gozo 🏍️",
+    "exp.gozoTour.wa.buggy": "Bonjour ! Je voudrais réserver un Tour en Buggy de Gozo 🚙",
+    "exp.gozoTour.wa.jeep": "Bonjour ! Je voudrais réserver un Tour en Jeep de Gozo 🚙",
+
+    "how.label": "Réservation Simple",
+    "how.title": "Comment ça marche",
+    "how.step1.title": "Envoyez un Message",
+    "how.step1.desc": "Touchez n'importe quel bouton 'Réserver' pour ouvrir WhatsApp avec un message pré-rempli.",
+    "how.step2.title": "Confirmez Votre Date",
+    "how.step2.desc": "Nous répondrons en quelques minutes pour confirmer la disponibilité et finaliser votre réservation.",
+    "how.step3.title": "Profitez de Malte !",
+    "how.step3.desc": "Présentez-vous et passez le meilleur moment de votre vie. Nous nous occupons du reste.",
+
+    "night.label": "Après le Coucher du Soleil",
+    "night.title": "Vie Nocturne & Restaurants",
+    "night.intro": "Malte s'anime après le coucher du soleil. Des bars sur les toits animés aux restaurants chaleureux au bord de l'eau, l'île offre une scène gastronomique et nocturne incroyable qui rivalise avec n'importe quelle destination méditerranéenne.",
+    "night.bars.title": "Bars & Vie Nocturne",
+    "night.bars.desc": "Paceville est la capitale de la fête à Malte — pleine de clubs, de bars à cocktails et de lieux de musique live. Pour quelque chose de plus détendu, rendez-vous dans les bars sur les toits de La Valette pour de superbes vues sur le port avec des cocktails artisanaux.",
+    "night.restaurants.title": "Restaurants",
+    "night.restaurants.desc": "La cuisine maltaise est un délicieux mélange de saveurs méditerranéennes. Goûtez aux fruits de mer frais dans les restaurants du marché aux poissons de Marsaxlokk, savourez le ragoût de lapin traditionnel (fenkata) à Mġarr, ou dînez dans les restaurants primés de La Valette. Ne manquez pas les pastizzi — les célèbres feuilletés de Malte !",
+    "night.tips.title": "Nos Conseils",
+    "night.tips.tip1": "🍷 Meilleurs verres au coucher du soleil : Café del Mar, Skybar Valletta",
+    "night.tips.tip2": "🍽️ À essayer : Noni, Legligin, Ta' Kris",
+    "night.tips.tip3": "🎶 Musique live : Bridge Bar, The Thirsty Barber",
+    "night.tips.tip4": "🌊 Dîner au bord de l'eau : Ta' Victor à Marsaxlokk",
+
+    "footer.desc": "Excursions en bateau et aventures exclusives pour nos invités. Créé avec amour à Malte 🇲🇹",
+    "footer.whatsapp": "Des questions ? Discutez avec nous sur WhatsApp",
+    "footer.rights": "Malta Experiences. Tous droits réservés.",
   },
 };
