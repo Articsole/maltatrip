@@ -628,7 +628,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "reviews.r6.country": "France",
     "reviews.r6.text": "Une croisière dans le port inoubliable, riche en histoire et avec des vues superbes. Réservation WhatsApp immédiate.",
 
-    "footer.desc": "Excursions en bateau et aventures exclusives pour nos invités. Créé avec amour à Malte 🇲🇹",
+    "footer.desc": "Expériences exclusives. Excursions en bateau et aventures privées inoubliables. Réservez instantanément via WhatsApp.",
     "footer.whatsapp": "Des questions ? Discutez avec nous sur WhatsApp",
     "footer.rights": "Malta Experiences. Tous droits réservés.",
   },
