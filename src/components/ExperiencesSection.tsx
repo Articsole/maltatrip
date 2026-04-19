@@ -8,43 +8,35 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const experiences = [
   {
     image: boatTrip,
+    slug: "boat",
     titleKey: "exp.boatTour.title",
     descKey: "exp.boatTour.desc",
     durationKey: "exp.boatTour.duration",
     groupKey: "exp.boatTour.group",
-    waKey: "exp.boatTour.wa",
   },
   {
     image: sunsetCruise,
+    slug: "private-boat",
     titleKey: "exp.privateBoat.title",
     descKey: "exp.privateBoat.desc",
     durationKey: "exp.privateBoat.duration",
     groupKey: "exp.privateBoat.group",
-    waKey: "exp.privateBoat.wa",
   },
   {
     image: partyBoat,
+    slug: "bus",
     titleKey: "exp.busTour.title",
     descKey: "exp.busTour.desc",
     durationKey: "exp.busTour.duration",
     groupKey: "exp.busTour.group",
-    subOptions: [
-      { labelKey: "exp.busTour.opt.north", waKey: "exp.busTour.wa.north" },
-      { labelKey: "exp.busTour.opt.south", waKey: "exp.busTour.wa.south" },
-      { labelKey: "exp.busTour.opt.gozo", waKey: "exp.busTour.wa.gozo" },
-    ],
   },
   {
     image: barCrawl,
+    slug: "gozo",
     titleKey: "exp.gozoTour.title",
     descKey: "exp.gozoTour.desc",
     durationKey: "exp.gozoTour.duration",
     groupKey: "exp.gozoTour.group",
-    subOptions: [
-      { labelKey: "exp.gozoTour.opt.quad", waKey: "exp.gozoTour.wa.quad" },
-      { labelKey: "exp.gozoTour.opt.buggy", waKey: "exp.gozoTour.wa.buggy" },
-      { labelKey: "exp.gozoTour.opt.jeep", waKey: "exp.gozoTour.wa.jeep" },
-    ],
   },
 ];
 
@@ -68,7 +60,7 @@ const ExperiencesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {experiences.map((exp, i) => (
-            <ExperienceCard key={exp.titleKey} {...exp} delay={i * 150} />
+            <ExperienceCard key={exp.slug} {...exp} delay={i * 150} />
           ))}
         </div>
       </div>
