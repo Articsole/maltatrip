@@ -17,10 +17,10 @@ export const translations: Record<Language, Record<string, string>> = {
     "nav.nightlife": "Nightlife & Dining",
     
     // Hero
-    "hero.badge": "Exclusive Guest Experiences",
+    "hero.badge": "Exclusive Experiences",
     "hero.title1": "Explore Malta",
     "hero.title2": "By Sea & Land",
-    "hero.subtitle": "Unforgettable boat trips & private adventures for our guests. Book instantly via WhatsApp.",
+    "hero.subtitle": "Unforgettable boat trips & private adventures. Book instantly via WhatsApp.",
     "hero.cta": "Book via WhatsApp",
     
     // Experiences
