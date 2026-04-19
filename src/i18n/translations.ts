@@ -93,7 +93,30 @@ export const translations: Record<Language, Record<string, string>> = {
     "night.tips.tip2": "🍽️ Must-try: Noni, Legligin, Ta' Kris",
     "night.tips.tip3": "🎶 Live music: Bridge Bar, The Thirsty Barber",
     "night.tips.tip4": "🌊 Waterfront dining: Ta' Victor in Marsaxlokk",
-    
+
+    // Reviews
+    "reviews.label": "Guest Reviews",
+    "reviews.title": "What Our Guests Say",
+    "reviews.count": "reviews",
+    "reviews.r1.name": "Sophie",
+    "reviews.r1.country": "Netherlands",
+    "reviews.r1.text": "The boat trip to the Blue Lagoon was absolutely magical. Crystal-clear water and the booking via WhatsApp was so easy!",
+    "reviews.r2.name": "Marco",
+    "reviews.r2.country": "Italy",
+    "reviews.r2.text": "Private boat tour was the highlight of our stay. The crew was friendly and the route was breathtaking.",
+    "reviews.r3.name": "James",
+    "reviews.r3.country": "United Kingdom",
+    "reviews.r3.text": "The hop-on hop-off bus tour gave us complete freedom to explore Malta at our own pace. Highly recommended!",
+    "reviews.r4.name": "Lena",
+    "reviews.r4.country": "Germany",
+    "reviews.r4.text": "Gozo by quad was such a fun experience. Beautiful views and great organisation from start to finish.",
+    "reviews.r5.name": "Yasmin",
+    "reviews.r5.country": "UAE",
+    "reviews.r5.text": "Perfectly organised, family-friendly and the kids loved Comino. We will definitely come back!",
+    "reviews.r6.name": "Pierre",
+    "reviews.r6.country": "France",
+    "reviews.r6.text": "An unforgettable harbour cruise with rich history and stunning views. Booking via WhatsApp was instant.",
+
     // Footer
     "footer.desc": "Exclusive boat trips & adventures for our guests. Created with love in Malta 🇲🇹",
     "footer.whatsapp": "Questions? Chat with us on WhatsApp",
