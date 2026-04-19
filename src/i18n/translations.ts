@@ -28,6 +28,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.title": "Choose Your Adventure",
     "exp.subtitle": "Hand-picked experiences to make your Malta stay unforgettable. Tap to book instantly.",
     "exp.bookNow": "Book Now",
+    "exp.viewOptions": "View Options",
     "exp.selectOption": "Select an option:",
     "exp.back": "← Back",
     
@@ -113,6 +114,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.title": "Kies Jouw Avontuur",
     "exp.subtitle": "Zorgvuldig geselecteerde ervaringen om je verblijf op Malta onvergetelijk te maken. Tik om direct te boeken.",
     "exp.bookNow": "Boek Nu",
+    "exp.viewOptions": "Bekijk Opties",
     "exp.selectOption": "Selecteer een optie:",
     "exp.back": "← Terug",
     
@@ -191,6 +193,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.title": "اختر مغامرتك",
     "exp.subtitle": "تجارب مختارة بعناية لجعل إقامتك في مالطا لا تُنسى. انقر للحجز فوراً.",
     "exp.bookNow": "احجز الآن",
+    "exp.viewOptions": "عرض الخيارات",
     "exp.selectOption": "اختر خياراً:",
     "exp.back": "→ رجوع",
     
@@ -269,6 +272,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.title": "Wähle Dein Abenteuer",
     "exp.subtitle": "Handverlesene Erlebnisse für einen unvergesslichen Malta-Aufenthalt. Tippe zum sofortigen Buchen.",
     "exp.bookNow": "Jetzt Buchen",
+    "exp.viewOptions": "Optionen Ansehen",
     "exp.selectOption": "Wähle eine Option:",
     "exp.back": "← Zurück",
     
@@ -347,6 +351,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.title": "Scegli la Tua Avventura",
     "exp.subtitle": "Esperienze selezionate per rendere il tuo soggiorno a Malta indimenticabile. Tocca per prenotare subito.",
     "exp.bookNow": "Prenota Ora",
+    "exp.viewOptions": "Vedi Opzioni",
     "exp.selectOption": "Seleziona un'opzione:",
     "exp.back": "← Indietro",
     
@@ -425,6 +430,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.title": "Choisissez Votre Aventure",
     "exp.subtitle": "Expériences soigneusement sélectionnées pour rendre votre séjour à Malte inoubliable. Touchez pour réserver instantanément.",
     "exp.bookNow": "Réserver",
+    "exp.viewOptions": "Voir les Options",
     "exp.selectOption": "Sélectionnez une option :",
     "exp.back": "← Retour",
 
