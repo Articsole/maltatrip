@@ -142,19 +142,49 @@ export const tourCategories: Record<string, TourCategory> = {
       {
         id: "quad",
         title: "Quad Gozo Tour",
-        description: "Adrenaline-packed quad ride through Gozo's countryside, cliffs and beaches.",
+        description:
+          "An adrenaline-packed ride through Gozo's countryside, dramatic cliffs and hidden beaches. Perfect for adventure lovers who want to explore the island off the beaten track.",
+        adultPrice: "€80 (driver)",
+        childPrice: "€40 (passenger)",
+        underFive: "Free under 5 years",
+        hours: "09:30 – 17:00",
+        notes: [
+          "Full-day guided tour",
+          "Lunch & boat transfer to Gozo included",
+          "Hotel pickup & drop-off included",
+        ],
         waMessage: "Hi! I'd like to book a Quad Gozo Tour 🏍️",
       },
       {
         id: "buggy",
         title: "Buggy Gozo Tour",
-        description: "Share the adventure with friends or family in a fun off-road buggy.",
+        description:
+          "Share the adventure with friends or family in a fun off-road buggy. Discover Gozo's most scenic spots while having a blast behind the wheel.",
+        adultPrice: "€90 (driver)",
+        childPrice: "€45 (passenger)",
+        underFive: "Free under 5 years",
+        hours: "09:30 – 17:00",
+        notes: [
+          "Full-day guided tour",
+          "Lunch & boat transfer to Gozo included",
+          "Hotel pickup & drop-off included",
+        ],
         waMessage: "Hi! I'd like to book a Buggy Gozo Tour 🚙",
       },
       {
         id: "jeep",
         title: "Jeep Gozo Tour",
-        description: "A guided jeep safari to Gozo's most iconic spots and hidden gems.",
+        description:
+          "A guided jeep safari to Gozo's most iconic spots and hidden gems. Sit back, relax and let your guide reveal the island's best-kept secrets.",
+        adultPrice: "€70",
+        childPrice: "€45 (ages 5–15)",
+        underFive: "Free under 5 years",
+        hours: "09:30 – 17:00",
+        notes: [
+          "Full-day guided tour",
+          "Lunch & boat transfer to Gozo included",
+          "Hotel pickup & drop-off included",
+        ],
         waMessage: "Hi! I'd like to book a Jeep Gozo Tour 🚙",
       },
     ],
