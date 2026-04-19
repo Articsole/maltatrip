@@ -83,11 +83,18 @@ export const tourCategories: Record<string, TourCategory> = {
     options: [
       {
         id: "private-charter",
-        title: "Private Charter — Gozo, Comino & Blue Lagoon",
+        title: "Private Charter — Fully Customisable",
         description:
-          "An exclusive boat just for your group. Hidden caves, secluded swim spots and the iconic Blue Lagoon — entirely on your schedule.",
-        notes: ["Custom itinerary", "Skipper included", "Contact us for availability & pricing"],
-        waMessage: "Hi! I'd like to book a Private Boat Tour 🛥️",
+          "A completely tailor-made experience, designed entirely around you. Choose your sailing route, the number of guests, the type of boat and many more details to create your perfect day at sea. For more information about your personal private boat tour, please get in touch with us via WhatsApp.",
+        notes: [
+          "Choose your own sailing route",
+          "Decide the number of guests",
+          "Pick from a selection of boats",
+          "Fully personalised experience",
+          "Contact us via WhatsApp for more information",
+        ],
+        waMessage:
+          "Hi! I'd like more information about a fully customised Private Boat Tour 🛥️ (route, guests, boat type, etc.)",
       },
     ],
   },
