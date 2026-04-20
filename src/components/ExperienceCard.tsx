@@ -1,6 +1,6 @@
 import { Clock, Users, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 
 interface ExperienceCardProps {
   image: string;
