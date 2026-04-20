@@ -141,7 +141,7 @@ export const tourCategories: Record<string, TourCategory> = {
         underFive: "Free under 5 years",
         hours: "09:45 – 18:30",
         notes: [
-          "With hotel transport: Adults €32 • Children €24",
+          "With hotel transport (to Gozo ferry terminal and back): Adults €32 • Children €24",
         ],
         waMessage: "Hi! I'd like to book the Gozo Bus Tour 🚌",
       },
