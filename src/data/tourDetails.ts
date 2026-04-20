@@ -147,6 +147,7 @@ export const tourCategories: Record<string, TourCategory> = {
         underFiveKey: "tour.freeUnder5",
         hoursKey: "tour.bus.hours.gozo",
         noteKeys: ["tour.bus.gozo.note.transport"],
+        routeStopsKey: "tour.bus.gozo.stops",
         waMessageKey: "tour.bus.gozo.wa",
       },
     ],
