@@ -39,7 +39,7 @@ export const tourCategories: Record<string, TourCategory> = {
         underFive: "Free under 5 years",
         departures: [
           { from: "Sliema", times: "10:30 – 18:30", duration: "8 hours" },
-          { from: "Bugibba Jetty", times: "11:30 – 17:30" },
+          { from: "Bugibba Jetty", times: "11:30 – 17:30", duration: "6 hours" },
         ],
         notes: ["Hotel transport included (round trip)"],
         waMessage: "Hi! I'd like to book the Boat Tour to Gozo & Comino 🚤",
@@ -54,7 +54,7 @@ export const tourCategories: Record<string, TourCategory> = {
         underFive: "Free under 5 years",
         departures: [
           { from: "Sliema", times: "10:30 – 18:30", duration: "8 hours" },
-          { from: "Bugibba Jetty", times: "11:30 – 17:30" },
+          { from: "Bugibba Jetty", times: "11:30 – 17:30", duration: "6 hours" },
         ],
         notes: ["Hotel transport included (round trip)"],
         waMessage: "Hi! I'd like to book the Comino Boat Tour 🏝️",
@@ -69,7 +69,11 @@ export const tourCategories: Record<string, TourCategory> = {
         underFive: "Free under 5 years",
         schedule:
           "Mon–Sat: 10:15, 12:15, 14:15, 16:15  •  Sun: 10:15, 12:15, 14:15",
-        notes: ["Duration: 90 minutes", "Discover both the Grand Harbour & Marsamxett"],
+        notes: [
+          "Departure point: Sliema",
+          "Duration: 90 minutes",
+          "Discover both the Grand Harbour & Marsamxett",
+        ],
         waMessage: "Hi! I'd like to book the Harbour Cruise ⛵",
       },
     ],
