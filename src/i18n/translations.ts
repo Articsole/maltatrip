@@ -37,8 +37,8 @@ export const translations: Record<Language, Record<string, string>> = {
     // Boat Tour
     "exp.boatTour.title": "Boat Tour",
     "exp.boatTour.desc": "Discover the magic of Malta from the water on an unforgettable boat trip along the breathtaking coastline. Be amazed by hidden caves, impressive rock formations, and the crystal-clear waters of the Blue Lagoon, perfect for swimming and relaxing. Choose the day trip to Gozo, Comino, and the Blue Lagoon and experience the best of multiple islands in one day. Enjoy sun, sea, and stunning views while adventuring with a fun group. The perfect mix of relaxation, nature, and discovery!",
-    "exp.boatTour.duration": "Full Day",
-    "exp.boatTour.group": "Up to 12",
+    "exp.boatTour.duration": "Varies",
+    "exp.boatTour.group": "For singles & groups",
     "exp.boatTour.wa": "Hi! I'd like to book a Boat Tour 🚤",
     
     // Private Boat Tour
@@ -51,8 +51,8 @@ export const translations: Record<Language, Record<string, string>> = {
     // Bus Tour
     "exp.busTour.title": "Bus Tour",
     "exp.busTour.desc": "Discover the best of Malta in a relaxed and flexible way with a hop-on hop-off bus tour. Get on and off wherever you like and explore the island's most beautiful spots at your own pace. Choose from three different routes: the northern, southern, and Gozo bus tour, each with unique highlights and breathtaking views. From historic cities to stunning coastlines, you won't miss a single highlight. The ideal way to discover Malta comfortably and worry-free!",
-    "exp.busTour.duration": "Full Day",
-    "exp.busTour.group": "Up to 20",
+    "exp.busTour.duration": "Varies",
+    "exp.busTour.group": "For singles & groups",
     "exp.busTour.opt.north": "North Malta Tour",
     "exp.busTour.opt.south": "South Malta Tour",
     "exp.busTour.opt.gozo": "Gozo Bus Tour",
@@ -63,8 +63,8 @@ export const translations: Record<Language, Record<string, string>> = {
     // Gozo Tour
     "exp.gozoTour.title": "Gozo Tour",
     "exp.gozoTour.desc": "Discover the beautiful island of Gozo your way with a tour that perfectly suits you. Choose from an adventurous jeep, quad or buggy tour, or go for a comfortable bus tour along the island's most beautiful spots. Each option introduces you to impressive nature, charming villages, and breathtaking views. Head out during the day or opt for a magical experience at sunset. Whatever you choose, the experience is entirely up to you!",
-    "exp.gozoTour.duration": "Full Day",
-    "exp.gozoTour.group": "Up to 10",
+    "exp.gozoTour.duration": "Varies",
+    "exp.gozoTour.group": "For singles & groups",
     "exp.gozoTour.opt.quad": "Quad Gozo Tour",
     "exp.gozoTour.opt.buggy": "Buggy Gozo Tour",
     "exp.gozoTour.opt.jeep": "Jeep Gozo Tour",
@@ -227,8 +227,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.boatTour.title": "Boottocht",
     "exp.boatTour.desc": "Ontdek de magie van Malta vanaf het water tijdens een onvergetelijke boottocht langs de adembenemende kustlijn. Laat je verrassen door verborgen grotten, indrukwekkende rotsformaties en het kristalheldere water van de Blue Lagoon, perfect om in te zwemmen en te ontspannen. Kies je voor de dagtrip naar Gozo, Comino en de Blue Lagoon, dan ervaar je het beste van meerdere eilanden in één dag. Geniet van zon, zee en prachtige uitzichten terwijl je samen met een gezellige groep op avontuur gaat. Een ideale mix van ontspanning, natuur en ontdekking!",
-    "exp.boatTour.duration": "Hele dag",
-    "exp.boatTour.group": "Tot 12 personen",
+    "exp.boatTour.duration": "Varieert",
+    "exp.boatTour.group": "Voor singles & groepen",
     "exp.boatTour.wa": "Hoi! Ik wil graag een Boottocht boeken 🚤",
     
     "exp.privateBoat.title": "Privé Boottocht",
@@ -239,8 +239,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.busTour.title": "Bustour",
     "exp.busTour.desc": "Ontdek het beste van Malta op een ontspannen en flexibele manier met een hop-on hop-off bustour. Stap in en uit waar je maar wilt en verken de mooiste plekken van het eiland op je eigen tempo. Kies uit drie verschillende routes: de noordelijke, zuidelijke en de Gozo bustour, elk met unieke highlights en adembenemende uitzichten. Van historische steden tot prachtige kustlijnen, je mist geen enkel hoogtepunt. De ideale manier om Malta comfortabel en zorgeloos te ontdekken!",
-    "exp.busTour.duration": "Hele dag",
-    "exp.busTour.group": "Tot 20 personen",
+    "exp.busTour.duration": "Varieert",
+    "exp.busTour.group": "Voor singles & groepen",
     "exp.busTour.opt.north": "Noord-Malta Tour",
     "exp.busTour.opt.south": "Zuid-Malta Tour",
     "exp.busTour.opt.gozo": "Gozo Bustour",
@@ -250,8 +250,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.gozoTour.title": "Gozo Tour",
     "exp.gozoTour.desc": "Ontdek het prachtige eiland Gozo op jouw manier met een tour die perfect bij je past. Kies uit een avontuurlijke jeep-, quad- of buggytour, of ga voor een comfortabele bustour langs de mooiste plekken van het eiland. Elke optie laat je kennismaken met indrukwekkende natuur, charmante dorpjes en adembenemende uitzichten. Ga op pad overdag of kies voor een magische ervaring tijdens zonsondergang. Wat je ook kiest, de beleving is helemaal aan jou!",
-    "exp.gozoTour.duration": "Hele dag",
-    "exp.gozoTour.group": "Tot 10 personen",
+    "exp.gozoTour.duration": "Varieert",
+    "exp.gozoTour.group": "Voor singles & groepen",
     "exp.gozoTour.opt.quad": "Quad Gozo Tour",
     "exp.gozoTour.opt.buggy": "Buggy Gozo Tour",
     "exp.gozoTour.opt.jeep": "Jeep Gozo Tour",
@@ -411,8 +411,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.boatTour.title": "جولة بالقارب",
     "exp.boatTour.desc": "اكتشف سحر مالطا من المياه في رحلة بحرية لا تُنسى على طول الساحل الخلاب. ستندهش من الكهوف المخفية والتشكيلات الصخرية المذهلة والمياه الصافية في البلو لاجون، المثالية للسباحة والاسترخاء. اختر الرحلة اليومية إلى غوزو وكومينو والبلو لاجون لتجربة أفضل ما في الجزر المتعددة في يوم واحد. استمتع بالشمس والبحر والمناظر الخلابة مع مجموعة مرحة. مزيج مثالي من الاسترخاء والطبيعة والاكتشاف!",
-    "exp.boatTour.duration": "يوم كامل",
-    "exp.boatTour.group": "حتى 12",
+    "exp.boatTour.duration": "يختلف",
+    "exp.boatTour.group": "للأفراد والمجموعات",
     "exp.boatTour.wa": "مرحبا! أود حجز جولة بالقارب 🚤",
     
     "exp.privateBoat.title": "جولة بحرية خاصة",
@@ -423,8 +423,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.busTour.title": "جولة بالحافلة",
     "exp.busTour.desc": "اكتشف أفضل ما في مالطا بطريقة مريحة ومرنة مع جولة حافلة هوب-أون هوب-أوف. اصعد وانزل أينما تريد واستكشف أجمل أماكن الجزيرة بإيقاعك الخاص. اختر من ثلاث مسارات مختلفة: شمال، جنوب وغوزو، لكل منها معالم فريدة ومناظر خلابة. من المدن التاريخية إلى السواحل الخلابة، لن تفوتك أي معلم. الطريقة المثالية لاكتشاف مالطا براحة ودون قلق!",
-    "exp.busTour.duration": "يوم كامل",
-    "exp.busTour.group": "حتى 20",
+    "exp.busTour.duration": "يختلف",
+    "exp.busTour.group": "للأفراد والمجموعات",
     "exp.busTour.opt.north": "جولة شمال مالطا",
     "exp.busTour.opt.south": "جولة جنوب مالطا",
     "exp.busTour.opt.gozo": "جولة حافلة غوزو",
@@ -434,8 +434,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.gozoTour.title": "جولة غوزو",
     "exp.gozoTour.desc": "اكتشف جزيرة غوزو الجميلة على طريقتك مع جولة تناسبك تمامًا. اختر بين جولة مغامرة بالجيب أو الكواد أو الباغي، أو جولة مريحة بالحافلة عبر أجمل أماكن الجزيرة. كل خيار يعرّفك على طبيعة مذهلة وقرى ساحرة ومناظر خلابة. انطلق خلال النهار أو اختر تجربة ساحرة عند غروب الشمس. مهما اخترت، التجربة بالكامل لك!",
-    "exp.gozoTour.duration": "يوم كامل",
-    "exp.gozoTour.group": "حتى 10",
+    "exp.gozoTour.duration": "يختلف",
+    "exp.gozoTour.group": "للأفراد والمجموعات",
     "exp.gozoTour.opt.quad": "جولة كواد غوزو",
     "exp.gozoTour.opt.buggy": "جولة باغي غوزو",
     "exp.gozoTour.opt.jeep": "جولة جيب غوزو",
@@ -595,8 +595,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.boatTour.title": "Bootstour",
     "exp.boatTour.desc": "Entdecke die Magie Maltas vom Wasser aus auf einer unvergesslichen Bootstour entlang der atemberaubenden Küste. Lass dich von versteckten Höhlen, beeindruckenden Felsformationen und dem kristallklaren Wasser der Blauen Lagune verzaubern – perfekt zum Schwimmen und Entspannen. Wähle den Tagesausflug nach Gozo, Comino und zur Blauen Lagune und erlebe das Beste aus mehreren Inseln an einem Tag. Genieße Sonne, Meer und herrliche Aussichten in einer geselligen Gruppe. Die ideale Mischung aus Entspannung, Natur und Entdeckung!",
-    "exp.boatTour.duration": "Ganzer Tag",
-    "exp.boatTour.group": "Bis zu 12",
+    "exp.boatTour.duration": "Variiert",
+    "exp.boatTour.group": "Für Einzelpersonen & Gruppen",
     "exp.boatTour.wa": "Hi! Ich möchte eine Bootstour buchen 🚤",
     
     "exp.privateBoat.title": "Private Bootstour",
@@ -607,8 +607,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.busTour.title": "Bustour",
     "exp.busTour.desc": "Entdecke das Beste von Malta auf entspannte und flexible Weise mit einer Hop-on-Hop-off-Bustour. Steige ein und aus, wo immer du willst, und erkunde die schönsten Orte der Insel in deinem eigenen Tempo. Wähle aus drei verschiedenen Routen: der Nord-, Süd- und Gozo-Bustour, jede mit einzigartigen Highlights und atemberaubenden Aussichten. Von historischen Städten bis zu wunderschönen Küsten – kein Highlight wird ausgelassen. Der ideale Weg, Malta komfortabel und sorgenfrei zu entdecken!",
-    "exp.busTour.duration": "Ganzer Tag",
-    "exp.busTour.group": "Bis zu 20",
+    "exp.busTour.duration": "Variiert",
+    "exp.busTour.group": "Für Einzelpersonen & Gruppen",
     "exp.busTour.opt.north": "Nord-Malta Tour",
     "exp.busTour.opt.south": "Süd-Malta Tour",
     "exp.busTour.opt.gozo": "Gozo Bustour",
@@ -618,8 +618,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.gozoTour.title": "Gozo Tour",
     "exp.gozoTour.desc": "Entdecke die wunderschöne Insel Gozo auf deine Art mit einer Tour, die perfekt zu dir passt. Wähle zwischen einer abenteuerlichen Jeep-, Quad- oder Buggy-Tour oder einer komfortablen Bustour zu den schönsten Orten der Insel. Jede Option bringt dich in Kontakt mit beeindruckender Natur, charmanten Dörfern und atemberaubenden Aussichten. Starte tagsüber oder wähle ein magisches Erlebnis bei Sonnenuntergang. Was auch immer du wählst, das Erlebnis liegt ganz bei dir!",
-    "exp.gozoTour.duration": "Ganzer Tag",
-    "exp.gozoTour.group": "Bis zu 10",
+    "exp.gozoTour.duration": "Variiert",
+    "exp.gozoTour.group": "Für Einzelpersonen & Gruppen",
     "exp.gozoTour.opt.quad": "Quad Gozo Tour",
     "exp.gozoTour.opt.buggy": "Buggy Gozo Tour",
     "exp.gozoTour.opt.jeep": "Jeep Gozo Tour",
@@ -779,8 +779,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.boatTour.title": "Tour in Barca",
     "exp.boatTour.desc": "Scopri la magia di Malta dall'acqua in un'indimenticabile gita in barca lungo la mozzafiato costa. Lasciati sorprendere da grotte nascoste, imponenti formazioni rocciose e dalle acque cristalline della Blue Lagoon, perfette per nuotare e rilassarsi. Scegli la gita giornaliera a Gozo, Comino e Blue Lagoon e vivi il meglio di più isole in un solo giorno. Goditi sole, mare e panorami spettacolari insieme a un gruppo allegro. Un mix ideale di relax, natura e scoperta!",
-    "exp.boatTour.duration": "Giornata Intera",
-    "exp.boatTour.group": "Fino a 12",
+    "exp.boatTour.duration": "Variabile",
+    "exp.boatTour.group": "Per singoli e gruppi",
     "exp.boatTour.wa": "Ciao! Vorrei prenotare un Tour in Barca 🚤",
     
     "exp.privateBoat.title": "Tour in Barca Privato",
@@ -791,8 +791,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.busTour.title": "Tour in Bus",
     "exp.busTour.desc": "Scopri il meglio di Malta in modo rilassato e flessibile con un tour in bus hop-on hop-off. Sali e scendi dove vuoi ed esplora i luoghi più belli dell'isola al tuo ritmo. Scegli tra tre percorsi diversi: nord, sud e Gozo, ognuno con highlight unici e viste mozzafiato. Dalle città storiche alle splendide coste, non perderai nemmeno un punto saliente. Il modo ideale per scoprire Malta comodamente e senza pensieri!",
-    "exp.busTour.duration": "Giornata Intera",
-    "exp.busTour.group": "Fino a 20",
+    "exp.busTour.duration": "Variabile",
+    "exp.busTour.group": "Per singoli e gruppi",
     "exp.busTour.opt.north": "Tour Nord Malta",
     "exp.busTour.opt.south": "Tour Sud Malta",
     "exp.busTour.opt.gozo": "Tour Bus Gozo",
@@ -802,8 +802,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     "exp.gozoTour.title": "Tour Gozo",
     "exp.gozoTour.desc": "Scopri la bellissima isola di Gozo a modo tuo con un tour perfetto per te. Scegli tra un avventuroso tour in jeep, quad o buggy, oppure un comodo tour in bus tra i luoghi più belli dell'isola. Ogni opzione ti farà conoscere una natura impressionante, villaggi affascinanti e viste mozzafiato. Parti durante il giorno o scegli un'esperienza magica al tramonto. Qualunque cosa tu scelga, l'esperienza è tutta tua!",
-    "exp.gozoTour.duration": "Giornata Intera",
-    "exp.gozoTour.group": "Fino a 10",
+    "exp.gozoTour.duration": "Variabile",
+    "exp.gozoTour.group": "Per singoli e gruppi",
     "exp.gozoTour.opt.quad": "Quad Tour Gozo",
     "exp.gozoTour.opt.buggy": "Buggy Tour Gozo",
     "exp.gozoTour.opt.jeep": "Jeep Tour Gozo",
@@ -963,8 +963,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "exp.boatTour.title": "Excursion en Bateau",
     "exp.boatTour.desc": "Découvrez la magie de Malte depuis l'eau lors d'une excursion en bateau inoubliable le long de la côte à couper le souffle. Laissez-vous surprendre par des grottes cachées, d'impressionnantes formations rocheuses et les eaux cristallines du Blue Lagoon, parfaites pour la baignade et la détente. Optez pour l'excursion d'une journée à Gozo, Comino et au Blue Lagoon et vivez le meilleur de plusieurs îles en une seule journée. Profitez du soleil, de la mer et de vues magnifiques en compagnie d'un groupe convivial. Un mélange idéal de détente, de nature et de découverte !",
-    "exp.boatTour.duration": "Journée Complète",
-    "exp.boatTour.group": "Jusqu'à 12",
+    "exp.boatTour.duration": "Variable",
+    "exp.boatTour.group": "Pour individuels et groupes",
     "exp.boatTour.wa": "Bonjour ! Je voudrais réserver une Excursion en Bateau 🚤",
 
     "exp.privateBoat.title": "Excursion en Bateau Privée",
@@ -975,8 +975,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "exp.busTour.title": "Excursion en Bus",
     "exp.busTour.desc": "Découvrez le meilleur de Malte de manière détendue et flexible avec un tour en bus hop-on hop-off. Montez et descendez où vous voulez et explorez les plus beaux endroits de l'île à votre rythme. Choisissez parmi trois itinéraires différents : le nord, le sud et le tour en bus de Gozo, chacun avec des points forts uniques et des vues à couper le souffle. Des villes historiques aux superbes côtes, vous ne manquerez aucun moment fort. La façon idéale de découvrir Malte confortablement et sans souci !",
-    "exp.busTour.duration": "Journée Complète",
-    "exp.busTour.group": "Jusqu'à 20",
+    "exp.busTour.duration": "Variable",
+    "exp.busTour.group": "Pour individuels et groupes",
     "exp.busTour.opt.north": "Tour du Nord de Malte",
     "exp.busTour.opt.south": "Tour du Sud de Malte",
     "exp.busTour.opt.gozo": "Tour en Bus de Gozo",
@@ -986,8 +986,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "exp.gozoTour.title": "Tour de Gozo",
     "exp.gozoTour.desc": "Découvrez la magnifique île de Gozo à votre façon avec un tour qui vous correspond parfaitement. Choisissez entre une aventureuse excursion en jeep, quad ou buggy, ou optez pour un confortable tour en bus à travers les plus beaux endroits de l'île. Chaque option vous fait découvrir une nature impressionnante, des villages charmants et des vues à couper le souffle. Partez en journée ou optez pour une expérience magique au coucher du soleil. Quoi que vous choisissiez, l'expérience vous appartient entièrement !",
-    "exp.gozoTour.duration": "Journée Complète",
-    "exp.gozoTour.group": "Jusqu'à 10",
+    "exp.gozoTour.duration": "Variable",
+    "exp.gozoTour.group": "Pour individuels et groupes",
     "exp.gozoTour.opt.quad": "Tour en Quad de Gozo",
     "exp.gozoTour.opt.buggy": "Tour en Buggy de Gozo",
     "exp.gozoTour.opt.jeep": "Tour en Jeep de Gozo",
@@ -1147,8 +1147,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "exp.boatTour.title": "Excursión en Barco",
     "exp.boatTour.desc": "Descubre la magia de Malta desde el agua en una inolvidable excursión en barco a lo largo de su impresionante costa. Déjate sorprender por cuevas escondidas, espectaculares formaciones rocosas y las aguas cristalinas del Blue Lagoon, perfectas para nadar y relajarse. Elige la excursión de un día a Gozo, Comino y el Blue Lagoon y disfruta de lo mejor de varias islas en un solo día. Sol, mar y vistas espectaculares en compañía de un grupo divertido. ¡La combinación ideal de relax, naturaleza y descubrimiento!",
-    "exp.boatTour.duration": "Día Completo",
-    "exp.boatTour.group": "Hasta 12",
+    "exp.boatTour.duration": "Varía",
+    "exp.boatTour.group": "Para individuales y grupos",
     "exp.boatTour.wa": "¡Hola! Me gustaría reservar una Excursión en Barco 🚤",
 
     "exp.privateBoat.title": "Excursión en Barco Privada",
@@ -1159,8 +1159,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "exp.busTour.title": "Tour en Bus",
     "exp.busTour.desc": "Descubre lo mejor de Malta de forma relajada y flexible con un tour en bus hop-on hop-off. Sube y baja donde quieras y explora los lugares más bonitos de la isla a tu propio ritmo. Elige entre tres rutas distintas: norte, sur y Gozo, cada una con vistas y puntos de interés únicos. ¡La forma ideal de descubrir Malta cómodamente!",
-    "exp.busTour.duration": "Día Completo",
-    "exp.busTour.group": "Hasta 20",
+    "exp.busTour.duration": "Varía",
+    "exp.busTour.group": "Para individuales y grupos",
     "exp.busTour.opt.north": "Tour Norte de Malta",
     "exp.busTour.opt.south": "Tour Sur de Malta",
     "exp.busTour.opt.gozo": "Tour Bus Gozo",
@@ -1170,8 +1170,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "exp.gozoTour.title": "Tour de Gozo",
     "exp.gozoTour.desc": "Descubre la hermosa isla de Gozo a tu manera con un tour perfecto para ti. Elige entre una aventura en jeep, quad o buggy, o un cómodo tour en bus por los lugares más bonitos. Cada opción te muestra naturaleza impresionante, pueblos encantadores y vistas espectaculares. ¡La experiencia es completamente tuya!",
-    "exp.gozoTour.duration": "Día Completo",
-    "exp.gozoTour.group": "Hasta 10",
+    "exp.gozoTour.duration": "Varía",
+    "exp.gozoTour.group": "Para individuales y grupos",
     "exp.gozoTour.opt.quad": "Tour Quad Gozo",
     "exp.gozoTour.opt.buggy": "Tour Buggy Gozo",
     "exp.gozoTour.opt.jeep": "Tour Jeep Gozo",
@@ -1330,8 +1330,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "exp.boatTour.title": "Passeio de Barco",
     "exp.boatTour.desc": "Descubra a magia de Malta a partir da água num inesquecível passeio de barco ao longo da deslumbrante costa. Deixe-se surpreender por grutas escondidas, formações rochosas impressionantes e as águas cristalinas da Blue Lagoon, perfeitas para nadar e relaxar. Escolha o passeio de um dia a Gozo, Comino e Blue Lagoon e viva o melhor de várias ilhas num só dia. A combinação ideal de descontração, natureza e descoberta!",
-    "exp.boatTour.duration": "Dia Inteiro",
-    "exp.boatTour.group": "Até 12",
+    "exp.boatTour.duration": "Varia",
+    "exp.boatTour.group": "Para individuais e grupos",
     "exp.boatTour.wa": "Olá! Gostaria de reservar um Passeio de Barco 🚤",
 
     "exp.privateBoat.title": "Passeio de Barco Privado",
@@ -1342,8 +1342,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "exp.busTour.title": "Tour de Autocarro",
     "exp.busTour.desc": "Descubra o melhor de Malta de forma descontraída e flexível com um tour de autocarro hop-on hop-off. Suba e desça onde quiser e explore os lugares mais bonitos da ilha ao seu ritmo. Escolha entre três rotas: norte, sul e Gozo. A forma ideal de descobrir Malta com conforto!",
-    "exp.busTour.duration": "Dia Inteiro",
-    "exp.busTour.group": "Até 20",
+    "exp.busTour.duration": "Varia",
+    "exp.busTour.group": "Para individuais e grupos",
     "exp.busTour.opt.north": "Tour Norte de Malta",
     "exp.busTour.opt.south": "Tour Sul de Malta",
     "exp.busTour.opt.gozo": "Tour de Autocarro Gozo",
@@ -1353,8 +1353,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "exp.gozoTour.title": "Tour de Gozo",
     "exp.gozoTour.desc": "Descubra a bela ilha de Gozo à sua maneira com um tour perfeito para si. Escolha entre uma aventura em jipe, quad ou buggy, ou um cómodo tour de autocarro pelos pontos mais bonitos da ilha. A experiência é totalmente sua!",
-    "exp.gozoTour.duration": "Dia Inteiro",
-    "exp.gozoTour.group": "Até 10",
+    "exp.gozoTour.duration": "Varia",
+    "exp.gozoTour.group": "Para individuais e grupos",
     "exp.gozoTour.opt.quad": "Tour Quad Gozo",
     "exp.gozoTour.opt.buggy": "Tour Buggy Gozo",
     "exp.gozoTour.opt.jeep": "Tour Jipe Gozo",
