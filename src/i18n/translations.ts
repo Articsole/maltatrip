@@ -1,4 +1,4 @@
-export type Language = "en" | "nl" | "ar" | "de" | "it" | "fr";
+export type Language = "en" | "nl" | "ar" | "de" | "it" | "fr" | "es" | "pt";
 
 export const languageNames: Record<Language, string> = {
   en: "English",
@@ -7,6 +7,8 @@ export const languageNames: Record<Language, string> = {
   de: "Deutsch",
   it: "Italiano",
   fr: "Français",
+  es: "Español",
+  pt: "Português",
 };
 
 export const translations: Record<Language, Record<string, string>> = {
