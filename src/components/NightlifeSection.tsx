@@ -1,5 +1,5 @@
 import { Wine, UtensilsCrossed, Star } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 
 const NightlifeSection = () => {
   const { t } = useLanguage();

@@ -3,7 +3,7 @@ import sunsetCruise from "@/assets/sunset-cruise.jpg";
 import partyBoat from "@/assets/party-boat.jpg";
 import barCrawl from "@/assets/bar-crawl.jpg";
 import ExperienceCard from "./ExperienceCard";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 
 const experiences = [
   {

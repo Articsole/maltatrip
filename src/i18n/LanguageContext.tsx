@@ -26,6 +26,3 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     </LanguageContext.Provider>
   );
 };
-
-// Re-export useLanguage for convenience (kept in a separate file to preserve Fast Refresh)
-export { useLanguage } from "./useLanguage";

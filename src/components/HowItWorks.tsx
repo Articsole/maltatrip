@@ -1,5 +1,5 @@
 import { MessageCircle, CalendarCheck, Waves } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 
 const HowItWorks = () => {
   const { t } = useLanguage();

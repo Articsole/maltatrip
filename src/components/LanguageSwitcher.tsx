@@ -1,4 +1,4 @@
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 import { Language, languageNames } from "@/i18n/translations";
 import { Globe } from "lucide-react";
 import { useState, useRef, useEffect } from "react";

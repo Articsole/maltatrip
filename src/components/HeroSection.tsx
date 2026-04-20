@@ -1,6 +1,6 @@
 import heroImg from "@/assets/hero-boat.jpg";
 import { Anchor, MessageCircle } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 
 const WHATSAPP_URL = "https://wa.me/35699822911?text=Hi!%20I'd%20like%20to%20book%20a%20trip!";
 

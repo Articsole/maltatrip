@@ -1,5 +1,5 @@
 import { Anchor, MessageCircle } from "lucide-react";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 
 const WHATSAPP_URL = "https://wa.me/35699822911?text=Hi!%20I%20have%20a%20question%20about%20your%20Malta%20experiences.";
 

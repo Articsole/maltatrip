@@ -1,7 +1,7 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, MessageCircle, Clock, MapPin, Users, Baby, Info, Route } from "lucide-react";
 import { tourCategories } from "@/data/tourDetails";
-import { useLanguage } from "@/i18n/LanguageContext";
+import { useLanguage } from "@/i18n/useLanguage";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import {
   Accordion,
