@@ -1,24 +1,33 @@
 // Detailed tour options shown on the dedicated tour pages.
-// Pricing & schedules are displayed here (the homepage cards remain price-free).
+// All user-facing strings use i18n keys (resolved via useLanguage().t).
+// Prices remain language-agnostic — they're plain values rendered as-is.
+
+export interface TourDeparture {
+  fromKey: string;        // i18n key for "From X"
+  times: string;          // raw time range
+  durationKey?: string;   // i18n key for duration string (e.g. "8 hours")
+}
 
 export interface TourOption {
   id: string;
-  title: string;
-  description?: string;
+  titleKey: string;
+  descriptionKey?: string;
   adultPrice?: string;
+  adultPriceKey?: string;     // optional translatable suffix appended to adult price
   childPrice?: string;
-  underFive?: string;
-  departures?: { from: string; times: string; duration?: string }[];
-  schedule?: string;
-  hours?: string;
-  notes?: string[];
-  waMessage: string;
+  childPriceKey?: string;
+  underFiveKey?: string;      // fully translated value for under-5 row
+  departures?: TourDeparture[];
+  scheduleKey?: string;
+  hoursKey?: string;
+  noteKeys?: string[];
+  waMessageKey: string;
 }
 
 export interface TourCategory {
   slug: string;
   titleKey: string;
-  intro: string;
+  introKey: string;
   options: TourOption[];
 }
 
@@ -26,55 +35,53 @@ export const tourCategories: Record<string, TourCategory> = {
   boat: {
     slug: "boat",
     titleKey: "exp.boatTour.title",
-    intro:
-      "Choose the perfect boat experience for your day on the Maltese waters — from full-day island hopping to a relaxed harbour cruise.",
+    introKey: "tour.boat.intro",
     options: [
       {
         id: "gozo-comino",
-        title: "Boat Tour — Gozo & Comino",
-        description:
-          "A full day of island hopping, swimming in the Blue Lagoon and exploring the rugged beauty of Gozo and Comino.",
+        titleKey: "tour.boat.gozoComino.title",
+        descriptionKey: "tour.boat.gozoComino.desc",
         adultPrice: "€42",
-        childPrice: "€30 (ages 5–15)",
-        underFive: "Free under 5 years",
+        childPrice: "€30",
+        childPriceKey: "tour.ages.5to15",
+        underFiveKey: "tour.freeUnder5",
         departures: [
-          { from: "Sliema", times: "10:30 – 18:30", duration: "8 hours" },
-          { from: "Bugibba Jetty", times: "11:30 – 17:30", duration: "6 hours" },
+          { fromKey: "tour.from.sliema", times: "10:30 – 18:30", durationKey: "tour.duration.8h" },
+          { fromKey: "tour.from.bugibba", times: "11:30 – 17:30", durationKey: "tour.duration.6h" },
         ],
-        notes: ["Hotel transport included (round trip)"],
-        waMessage: "Hi! I'd like to book the Boat Tour to Gozo & Comino 🚤",
+        noteKeys: ["tour.note.hotelTransport"],
+        waMessageKey: "tour.boat.gozoComino.wa",
       },
       {
         id: "comino",
-        title: "Boat Tour — Comino",
-        description:
-          "Spend a full day at the famous Blue Lagoon — crystal-clear water, hidden caves and pure relaxation.",
+        titleKey: "tour.boat.comino.title",
+        descriptionKey: "tour.boat.comino.desc",
         adultPrice: "€30",
-        childPrice: "€20 (ages 5–15)",
-        underFive: "Free under 5 years",
+        childPrice: "€20",
+        childPriceKey: "tour.ages.5to15",
+        underFiveKey: "tour.freeUnder5",
         departures: [
-          { from: "Sliema", times: "10:30 – 18:30", duration: "8 hours" },
-          { from: "Bugibba Jetty", times: "11:30 – 17:30", duration: "6 hours" },
+          { fromKey: "tour.from.sliema", times: "10:30 – 18:30", durationKey: "tour.duration.8h" },
+          { fromKey: "tour.from.bugibba", times: "11:30 – 17:30", durationKey: "tour.duration.6h" },
         ],
-        notes: ["Hotel transport included (round trip)"],
-        waMessage: "Hi! I'd like to book the Comino Boat Tour 🏝️",
+        noteKeys: ["tour.note.hotelTransport"],
+        waMessageKey: "tour.boat.comino.wa",
       },
       {
         id: "harbour-cruise",
-        title: "Harbour Cruise",
-        description:
-          "A scenic 90-minute cruise around Malta's historic harbours with live commentary on the rich maritime history.",
+        titleKey: "tour.boat.harbour.title",
+        descriptionKey: "tour.boat.harbour.desc",
         adultPrice: "€20",
-        childPrice: "€12 (ages 5–15)",
-        underFive: "Free under 5 years",
-        schedule:
-          "Mon–Sat: 10:15, 12:15, 14:15, 16:15  •  Sun: 10:15, 12:15, 14:15",
-        notes: [
-          "Departure point: Sliema",
-          "Duration: 90 minutes",
-          "Discover both the Grand Harbour & Marsamxett",
+        childPrice: "€12",
+        childPriceKey: "tour.ages.5to15",
+        underFiveKey: "tour.freeUnder5",
+        scheduleKey: "tour.boat.harbour.schedule",
+        noteKeys: [
+          "tour.boat.harbour.note.departure",
+          "tour.boat.harbour.note.duration",
+          "tour.boat.harbour.note.discover",
         ],
-        waMessage: "Hi! I'd like to book the Harbour Cruise ⛵",
+        waMessageKey: "tour.boat.harbour.wa",
       },
     ],
   },
@@ -82,23 +89,20 @@ export const tourCategories: Record<string, TourCategory> = {
   "private-boat": {
     slug: "private-boat",
     titleKey: "exp.privateBoat.title",
-    intro:
-      "Enjoy Malta's coastline in complete privacy — sail at your own pace, choose your route and stop wherever you like.",
+    introKey: "tour.privateBoat.intro",
     options: [
       {
         id: "private-charter",
-        title: "Private Charter — Fully Customisable",
-        description:
-          "A completely tailor-made experience, designed entirely around you. Choose your sailing route, the number of guests, the type of boat and many more details to create your perfect day at sea. For more information about your personal private boat tour, please get in touch with us via WhatsApp.",
-        notes: [
-          "Choose your own sailing route",
-          "Decide the number of guests",
-          "Pick from a selection of boats",
-          "Fully personalised experience",
-          "Contact us via WhatsApp for more information",
+        titleKey: "tour.privateBoat.charter.title",
+        descriptionKey: "tour.privateBoat.charter.desc",
+        noteKeys: [
+          "tour.privateBoat.charter.note.route",
+          "tour.privateBoat.charter.note.guests",
+          "tour.privateBoat.charter.note.boats",
+          "tour.privateBoat.charter.note.personalised",
+          "tour.privateBoat.charter.note.contact",
         ],
-        waMessage:
-          "Hi! I'd like more information about a fully customised Private Boat Tour 🛥️ (route, guests, boat type, etc.)",
+        waMessageKey: "tour.privateBoat.charter.wa",
       },
     ],
   },
@@ -106,44 +110,41 @@ export const tourCategories: Record<string, TourCategory> = {
   bus: {
     slug: "bus",
     titleKey: "exp.busTour.title",
-    intro:
-      "Discover Malta and Gozo at your own pace with hop-on hop-off bus tours covering all the major sights.",
+    introKey: "tour.bus.intro",
     options: [
       {
         id: "north",
-        title: "North Malta — Hop-On Hop-Off",
-        description:
-          "Discover the charming north of Malta, including Mdina, the cliffs of Dingli and the picturesque coastal villages — all at your own pace.",
+        titleKey: "tour.bus.north.title",
+        descriptionKey: "tour.bus.north.desc",
         adultPrice: "€25",
-        childPrice: "€16 (ages 5–15)",
-        underFive: "Free under 5 years",
-        hours: "09:00 – 18:00",
-        waMessage: "Hi! I'd like to book the North Malta Bus Tour 🚌",
+        childPrice: "€16",
+        childPriceKey: "tour.ages.5to15",
+        underFiveKey: "tour.freeUnder5",
+        hoursKey: "tour.bus.hours.malta",
+        waMessageKey: "tour.bus.north.wa",
       },
       {
         id: "south",
-        title: "South Malta — Hop-On Hop-Off",
-        description:
-          "Explore the southern highlights of Malta — from the colourful fishing village of Marsaxlokk to the historic Three Cities and the stunning Blue Grotto.",
+        titleKey: "tour.bus.south.title",
+        descriptionKey: "tour.bus.south.desc",
         adultPrice: "€25",
-        childPrice: "€16 (ages 5–15)",
-        underFive: "Free under 5 years",
-        hours: "09:00 – 18:00",
-        waMessage: "Hi! I'd like to book the South Malta Bus Tour 🚌",
+        childPrice: "€16",
+        childPriceKey: "tour.ages.5to15",
+        underFiveKey: "tour.freeUnder5",
+        hoursKey: "tour.bus.hours.malta",
+        waMessageKey: "tour.bus.south.wa",
       },
       {
         id: "gozo-bus",
-        title: "Gozo Bus Tour — Hop-On Hop-Off",
-        description:
-          "Explore the charming island of Gozo with full flexibility — get off at any stop and continue when you're ready.",
+        titleKey: "tour.bus.gozo.title",
+        descriptionKey: "tour.bus.gozo.desc",
         adultPrice: "€25",
-        childPrice: "€16 (ages 5–15)",
-        underFive: "Free under 5 years",
-        hours: "09:45 – 18:30",
-        notes: [
-          "With hotel transport (to Gozo ferry terminal and back): Adults €32 • Children €24",
-        ],
-        waMessage: "Hi! I'd like to book the Gozo Bus Tour 🚌",
+        childPrice: "€16",
+        childPriceKey: "tour.ages.5to15",
+        underFiveKey: "tour.freeUnder5",
+        hoursKey: "tour.bus.hours.gozo",
+        noteKeys: ["tour.bus.gozo.note.transport"],
+        waMessageKey: "tour.bus.gozo.wa",
       },
     ],
   },
@@ -151,54 +152,55 @@ export const tourCategories: Record<string, TourCategory> = {
   gozo: {
     slug: "gozo",
     titleKey: "exp.gozoTour.title",
-    intro:
-      "Pick your favourite way to explore Gozo — adventurous off-road or a relaxed guided tour.",
+    introKey: "tour.gozo.intro",
     options: [
       {
         id: "quad",
-        title: "Quad Gozo Tour",
-        description:
-          "An adrenaline-packed ride through Gozo's countryside, dramatic cliffs and hidden beaches. Perfect for adventure lovers who want to explore the island off the beaten track.",
-        adultPrice: "€115 (driver — must be 21+ with driving licence)",
-        childPrice: "€80 (passenger — ages 5+)",
-        hours: "6 hours",
-        notes: [
-          "Boat transport to Gozo included",
-          "Hotel pickup & drop-off included",
-          "Lunch included",
+        titleKey: "tour.gozo.quad.title",
+        descriptionKey: "tour.gozo.quad.desc",
+        adultPrice: "€115",
+        adultPriceKey: "tour.gozo.driver21",
+        childPrice: "€80",
+        childPriceKey: "tour.gozo.passenger5",
+        hoursKey: "tour.duration.6h",
+        noteKeys: [
+          "tour.gozo.note.boat",
+          "tour.gozo.note.hotel",
+          "tour.gozo.note.lunch",
         ],
-        waMessage: "Hi! I'd like to book a Quad Gozo Tour 🏍️",
+        waMessageKey: "tour.gozo.quad.wa",
       },
       {
         id: "buggy",
-        title: "Buggy Gozo Tour",
-        description:
-          "Share the adventure with friends or family in a fun off-road buggy. Discover Gozo's most scenic spots while having a blast behind the wheel.",
-        adultPrice: "€115 (driver — must be 21+ with driving licence)",
-        childPrice: "€80 (passenger — ages 3+)",
-        hours: "6 hours",
-        notes: [
-          "Boat transport to Gozo included",
-          "Hotel pickup & drop-off included",
-          "Lunch included",
+        titleKey: "tour.gozo.buggy.title",
+        descriptionKey: "tour.gozo.buggy.desc",
+        adultPrice: "€115",
+        adultPriceKey: "tour.gozo.driver21",
+        childPrice: "€80",
+        childPriceKey: "tour.gozo.passenger3",
+        hoursKey: "tour.duration.6h",
+        noteKeys: [
+          "tour.gozo.note.boat",
+          "tour.gozo.note.hotel",
+          "tour.gozo.note.lunch",
         ],
-        waMessage: "Hi! I'd like to book a Buggy Gozo Tour 🚙",
+        waMessageKey: "tour.gozo.buggy.wa",
       },
       {
         id: "jeep",
-        title: "Jeep Gozo Tour",
-        description:
-          "A guided jeep safari to Gozo's most iconic spots and hidden gems. Sit back, relax and let your guide reveal the island's best-kept secrets.",
+        titleKey: "tour.gozo.jeep.title",
+        descriptionKey: "tour.gozo.jeep.desc",
         adultPrice: "€80",
-        childPrice: "€65 (ages 3–10)",
-        underFive: "Free under 3 years (no lunch included)",
-        hours: "6 hours",
-        notes: [
-          "Boat transport to Gozo included",
-          "Hotel pickup & drop-off included",
-          "Lunch included (except under 3)",
+        childPrice: "€65",
+        childPriceKey: "tour.ages.3to10",
+        underFiveKey: "tour.gozo.freeUnder3",
+        hoursKey: "tour.duration.6h",
+        noteKeys: [
+          "tour.gozo.note.boat",
+          "tour.gozo.note.hotel",
+          "tour.gozo.jeep.note.lunch",
         ],
-        waMessage: "Hi! I'd like to book a Jeep Gozo Tour 🚙",
+        waMessageKey: "tour.gozo.jeep.wa",
       },
     ],
   },
