@@ -21,6 +21,7 @@ export interface TourOption {
   scheduleKey?: string;
   hoursKey?: string;
   noteKeys?: string[];
+  routeStopsKey?: string;     // optional i18n key with full route/stops text (multi-line)
   waMessageKey: string;
 }
 
@@ -121,6 +122,7 @@ export const tourCategories: Record<string, TourCategory> = {
         childPriceKey: "tour.ages.5to15",
         underFiveKey: "tour.freeUnder5",
         hoursKey: "tour.bus.hours.malta",
+        routeStopsKey: "tour.bus.north.stops",
         waMessageKey: "tour.bus.north.wa",
       },
       {
@@ -132,6 +134,7 @@ export const tourCategories: Record<string, TourCategory> = {
         childPriceKey: "tour.ages.5to15",
         underFiveKey: "tour.freeUnder5",
         hoursKey: "tour.bus.hours.malta",
+        routeStopsKey: "tour.bus.south.stops",
         waMessageKey: "tour.bus.south.wa",
       },
       {

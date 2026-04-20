@@ -1,8 +1,14 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { ArrowLeft, MessageCircle, Clock, MapPin, Users, Baby, Info } from "lucide-react";
+import { ArrowLeft, MessageCircle, Clock, MapPin, Users, Baby, Info, Route } from "lucide-react";
 import { tourCategories } from "@/data/tourDetails";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const WHATSAPP_NUMBER = "35699822911";
 
@@ -127,6 +133,24 @@ const TourDetail = () => {
                       </li>
                     ))}
                   </ul>
+                )}
+
+                {opt.routeStopsKey && (
+                  <Accordion type="single" collapsible className="mb-6">
+                    <AccordionItem value="route" className="border border-border rounded-xl bg-muted/30 px-4">
+                      <AccordionTrigger className="font-body font-semibold text-foreground hover:no-underline">
+                        <span className="flex items-center gap-2">
+                          <Route className="w-4 h-4 text-primary" />
+                          {t("tour.label.viewRoute")}
+                        </span>
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        <div className="font-body text-sm text-muted-foreground whitespace-pre-line leading-relaxed">
+                          {t(opt.routeStopsKey)}
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
                 )}
 
                 <button
