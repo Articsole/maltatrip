@@ -1,6 +1,6 @@
 import boatTrip from "@/assets/boat-trip.jpg";
 import sunsetCruise from "@/assets/sunset-cruise.jpg";
-import partyBoat from "@/assets/party-boat.jpg";
+import busTour from "@/assets/bus-tour.jpg";
 import barCrawl from "@/assets/bar-crawl.jpg";
 import ExperienceCard from "./ExperienceCard";
 import { useLanguage } from "@/i18n/useLanguage";
@@ -23,7 +23,7 @@ const experiences = [
     groupKey: "exp.privateBoat.group",
   },
   {
-    image: partyBoat,
+    image: busTour,
     slug: "bus",
     titleKey: "exp.busTour.title",
     descKey: "exp.busTour.desc",
