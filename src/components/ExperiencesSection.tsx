@@ -2,6 +2,7 @@ import boatTrip from "@/assets/boat-trip.jpg";
 import sunsetCruise from "@/assets/sunset-cruise.jpg";
 import busTour from "@/assets/bus-tour.jpg";
 import barCrawl from "@/assets/bar-crawl.jpg";
+import jetSki from "@/assets/jet-ski.jpg";
 import ExperienceCard from "./ExperienceCard";
 import { useLanguage } from "@/i18n/useLanguage";
 
@@ -38,6 +39,13 @@ const experiences = [
     durationKey: "exp.gozoTour.duration",
     groupKey: "exp.gozoTour.group",
   },
+  {
+    image: jetSki,
+    slug: "more",
+    titleKey: "exp.moreOptions.title",
+    descKey: "exp.moreOptions.desc",
+    waMessageKey: "exp.moreOptions.wa",
+  },
 ];
 
 const ExperiencesSection = () => {
@@ -60,7 +68,17 @@ const ExperiencesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {experiences.map((exp, i) => (
-            <ExperienceCard key={exp.slug} {...exp} delay={i * 150} />
+            <ExperienceCard 
+              key={exp.slug} 
+              image={exp.image}
+              slug={exp.slug}
+              titleKey={exp.titleKey}
+              descKey={exp.descKey}
+              durationKey={exp.durationKey}
+              groupKey={exp.groupKey}
+              waMessage={exp.waMessageKey}
+              delay={i * 150} 
+            />
           ))}
         </div>
       </div>
