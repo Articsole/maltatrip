@@ -265,6 +265,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.gozoTour.wa.buggy": "Hoi! Ik wil graag een Buggy Gozo Tour boeken 🚙",
     "exp.gozoTour.wa.jeep": "Hoi! Ik wil graag een Jeep Gozo Tour boeken 🚙",
     
+    // More Options
+    "exp.moreOptions.title": "Meer mogelijkheden op het eiland",
+    "exp.moreOptions.desc": "Op zoek naar meer activiteiten op het eiland? Stuur ons een bericht—we helpen je graag om de perfecte ervaring te plannen en te realiseren!",
+    "exp.moreOptions.wa": "Hoi! Ik ben op zoek naar meer activiteiten op Malta. Kunnen jullie me helpen om de perfecte ervaring te plannen? 🏝️",
+    
     "how.label": "Eenvoudig Boeken",
     "how.title": "Hoe Het Werkt",
     "how.step1.title": "Stuur een Bericht",
@@ -449,6 +454,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.gozoTour.wa.quad": "مرحبا! أود حجز جولة كواد غوزو 🏍️",
     "exp.gozoTour.wa.buggy": "مرحبا! أود حجز جولة باغي غوزو 🚙",
     "exp.gozoTour.wa.jeep": "مرحبا! أود حجز جولة جيب غوزو 🚙",
+    
+    // More Options
+    "exp.moreOptions.title": "المزيد من الخيارات على الجزيرة",
+    "exp.moreOptions.desc": "هل تبحث عن المزيد من الأشياء التي يمكنك القيام بها على الجزيرة؟ فقط أرسل لنا رسالة—نحب مساعدتك في التخطيط للتجربة المثالية وجعلها تحقق!",
+    "exp.moreOptions.wa": "مرحبا! أنا أبحث عن المزيد من الأشياء التي يمكنني القيام بها في مالطا. هل يمكنك مساعدتي في التخطيط للتجربة المثالية؟ 🏝️",
     
     "how.label": "حجز بسيط",
     "how.title": "كيف يعمل",
@@ -635,6 +645,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.gozoTour.wa.buggy": "Hi! Ich möchte eine Buggy Gozo Tour buchen 🚙",
     "exp.gozoTour.wa.jeep": "Hi! Ich möchte eine Jeep Gozo Tour buchen 🚙",
     
+    // More Options
+    "exp.moreOptions.title": "Mehr Möglichkeiten auf der Insel",
+    "exp.moreOptions.desc": "Auf der Suche nach mehr Aktivitäten auf der Insel? Schicken Sie uns einfach eine Nachricht—wir helfen Ihnen gerne dabei, das perfekte Erlebnis zu planen und umzusetzen!",
+    "exp.moreOptions.wa": "Hallo! Ich suche nach mehr Aktivitäten auf Malta. Könnt ihr mir helfen, das perfekte Erlebnis zu planen? 🏝️",
+    
     "how.label": "Einfach Buchen",
     "how.title": "So funktioniert's",
     "how.step1.title": "Nachricht senden",
@@ -819,6 +834,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.gozoTour.wa.quad": "Ciao! Vorrei prenotare un Quad Tour Gozo 🏍️",
     "exp.gozoTour.wa.buggy": "Ciao! Vorrei prenotare un Buggy Tour Gozo 🚙",
     "exp.gozoTour.wa.jeep": "Ciao! Vorrei prenotare un Jeep Tour Gozo 🚙",
+    
+    // More Options
+    "exp.moreOptions.title": "Più opzioni sull'isola",
+    "exp.moreOptions.desc": "Cerchi altre cose da fare sull'isola? Mandaci un messaggio—ci piacerebbe aiutarti a pianificare l'esperienza perfetta e realizzarla!",
+    "exp.moreOptions.wa": "Ciao! Sto cercando altre cose da fare a Malta. Potete aiutarmi a pianificare l'esperienza perfetta? 🏝️",
     
     "how.label": "Prenotazione Semplice",
     "how.title": "Come Funziona",
@@ -1005,6 +1025,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.gozoTour.wa.buggy": "Bonjour ! Je voudrais réserver un Tour en Buggy de Gozo 🚙",
     "exp.gozoTour.wa.jeep": "Bonjour ! Je voudrais réserver un Tour en Jeep de Gozo 🚙",
 
+    // More Options
+    "exp.moreOptions.title": "Plus d'options sur l'île",
+    "exp.moreOptions.desc": "Vous cherchez d'autres activités sur l'île ? Envoyez-nous un message—nous serions ravis de vous aider à planifier l'expérience parfaite et de la concrétiser !",
+    "exp.moreOptions.wa": "Bonjour ! Je cherche d'autres activités à Malte. Pouvez-vous m'aider à planifier l'expérience parfaite ? 🏝️",
+
     "how.label": "Réservation Simple",
     "how.title": "Comment ça marche",
     "how.step1.title": "Envoyez un Message",
@@ -1190,6 +1215,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.gozoTour.wa.buggy": "¡Hola! Me gustaría reservar un Tour Buggy Gozo 🚙",
     "exp.gozoTour.wa.jeep": "¡Hola! Me gustaría reservar un Tour Jeep Gozo 🚙",
 
+    // More Options
+    "exp.moreOptions.title": "Más opciones en la isla",
+    "exp.moreOptions.desc": "¿Buscas más cosas para hacer en la isla? Solo envíanos un mensaje—nos encantaría ayudarte a planificar la experiencia perfecta y hacerla realidad!",
+    "exp.moreOptions.wa": "¡Hola! Estoy buscando más cosas para hacer en Malta. ¿Pueden ayudarme a planificar la experiencia perfecta? 🏝️",
+
     "how.label": "Reserva Sencilla",
     "how.title": "Cómo Funciona",
     "how.step1.title": "Envía un Mensaje",
@@ -1373,6 +1403,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.gozoTour.wa.quad": "Olá! Gostaria de reservar um Tour Quad Gozo 🏍️",
     "exp.gozoTour.wa.buggy": "Olá! Gostaria de reservar um Tour Buggy Gozo 🚙",
     "exp.gozoTour.wa.jeep": "Olá! Gostaria de reservar um Tour Jipe Gozo 🚙",
+
+    // More Options
+    "exp.moreOptions.title": "Mais opções na ilha",
+    "exp.moreOptions.desc": "Procurando mais coisas para fazer na ilha? Envie-nos uma mensagem—adoramos ajudar a planejar a experiência perfeita e torná-la realidade!",
+    "exp.moreOptions.wa": "Olá! Estou procurando mais coisas para fazer em Malta. Vocês podem me ajudar a planejar a experiência perfeita? 🏝️",
 
     "how.label": "Reserva Simples",
     "how.title": "Como Funciona",
