@@ -1,7 +1,7 @@
 import boatTrip from "@/assets/boat-trip.jpg";
 import sunsetCruise from "@/assets/sunset-cruise.jpg";
 import busTour from "@/assets/bus-tour.jpg";
-import barCrawl from "@/assets/bar-crawl.jpg";
+import gozoTour from "@/assets/gozo-tour.jpg";
 import jetSki from "@/assets/jet-ski.jpg";
 import ExperienceCard from "./ExperienceCard";
 import { useLanguage } from "@/i18n/useLanguage";
@@ -32,7 +32,7 @@ const experiences = [
     groupKey: "exp.busTour.group",
   },
   {
-    image: barCrawl,
+    image: gozoTour,
     slug: "gozo",
     titleKey: "exp.gozoTour.title",
     descKey: "exp.gozoTour.desc",
