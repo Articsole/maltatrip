@@ -72,6 +72,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "exp.gozoTour.wa.buggy": "Hi! I'd like to book a Buggy Gozo Tour 🚙",
     "exp.gozoTour.wa.jeep": "Hi! I'd like to book a Jeep Gozo Tour 🚙",
     
+    // More Options
+    "exp.moreOptions.title": "More Options on the Island",
+    "exp.moreOptions.desc": "Looking for more things to do on the island? Just send us a message—we'd love to help you plan the perfect experience and make it happen!",
+    "exp.moreOptions.wa": "Hi! I'm looking for more things to do on Malta. Can you help me plan the perfect experience? 🏝️",
+    
     // How it works
     "how.label": "Simple Booking",
     "how.title": "How It Works",

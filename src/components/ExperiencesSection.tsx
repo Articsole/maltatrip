@@ -2,6 +2,7 @@ import boatTrip from "@/assets/boat-trip.jpg";
 import sunsetCruise from "@/assets/sunset-cruise.jpg";
 import busTour from "@/assets/bus-tour.jpg";
 import barCrawl from "@/assets/bar-crawl.jpg";
+import jetSki from "@/assets/jet-ski.jpg";
 import ExperienceCard from "./ExperienceCard";
 import { useLanguage } from "@/i18n/useLanguage";
 
@@ -37,6 +38,13 @@ const experiences = [
     descKey: "exp.gozoTour.desc",
     durationKey: "exp.gozoTour.duration",
     groupKey: "exp.gozoTour.group",
+  },
+  {
+    image: jetSki,
+    slug: "more",
+    titleKey: "exp.moreOptions.title",
+    descKey: "exp.moreOptions.desc",
+    waMessageKey: "exp.moreOptions.wa",
   },
 ];
 
