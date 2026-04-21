@@ -68,7 +68,17 @@ const ExperiencesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {experiences.map((exp, i) => (
-            <ExperienceCard key={exp.slug} {...exp} delay={i * 150} />
+            <ExperienceCard 
+              key={exp.slug} 
+              image={exp.image}
+              slug={exp.slug}
+              titleKey={exp.titleKey}
+              descKey={exp.descKey}
+              durationKey={exp.durationKey}
+              groupKey={exp.groupKey}
+              waMessage={exp.waMessageKey}
+              delay={i * 150} 
+            />
           ))}
         </div>
       </div>
