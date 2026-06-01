@@ -1,4 +1,5 @@
 import { useParams, Link, Navigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, MessageCircle, Clock, MapPin, Users, Baby, Info, Route } from "lucide-react";
 import { tourCategories } from "@/data/tourDetails";
 import { useLanguage } from "@/i18n/useLanguage";
@@ -11,6 +12,69 @@ import {
 } from "@/components/ui/accordion";
 
 const WHATSAPP_NUMBER = "35699822911";
+const SITE_URL = "https://travelingmalta.com";
+
+const seoBySlug: Record<string, { title: string; description: string }> = {
+  boat: {
+    title: "Malta Boat Tours — Comino, Blue Lagoon & Gozo Trips",
+    description:
+      "Full-day Malta boat tours to Comino, the Blue Lagoon and Gozo, plus Grand Harbour cruises. Departures from Sliema and Buġibba. Book via WhatsApp.",
+  },
+  "private-boat": {
+    title: "Private Boat Charter Malta — Personalised Day Trips",
+    description:
+      "Private boat charters around Malta, Comino and Gozo. Tailored routes, your own crew and flexible departure times. Request your charter via WhatsApp.",
+  },
+  bus: {
+    title: "Malta Bus Tours — North, South & Gozo Day Trips",
+    description:
+      "Guided bus tours across North Malta, South Malta and Gozo. Hotel pickup, expert guides and the island's top stops. Book your seat via WhatsApp.",
+  },
+  gozo: {
+    title: "Gozo Quad, Buggy & Jeep Tours — Island Adventures",
+    description:
+      "Explore Gozo by quad, buggy or jeep with hotel pickup, ferry and lunch included. Small-group island adventures. Book on WhatsApp.",
+  },
+};
+
+const TourDetail = () => {
+  const { slug } = useParams<{ slug: string }>();
+  const { t } = useLanguage();
+
+  const category = slug ? tourCategories[slug] : undefined;
+  if (!category || !slug) return <Navigate to="/" replace />;
+
+  const seo = seoBySlug[slug] ?? {
+    title: `${t(category.titleKey)} — Malta Trip`,
+    description: t(category.introKey),
+  };
+  const canonical = `${SITE_URL}/tour/${slug}`;
+
+  // Build Product JSON-LD with AggregateOffer from option adult prices.
+  const prices = category.options
+    .map((o) => o.adultPrice)
+    .filter((p): p is string => !!p)
+    .map((p) => Number(p.replace(/[^0-9.]/g, "")))
+    .filter((n) => !Number.isNaN(n) && n > 0);
+  const productJsonLd: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: t(category.titleKey),
+    description: t(category.introKey),
+    brand: { "@type": "Brand", name: "Malta Trip" },
+    url: canonical,
+  };
+  if (prices.length > 0) {
+    productJsonLd.offers = {
+      "@type": "AggregateOffer",
+      priceCurrency: "EUR",
+      lowPrice: Math.min(...prices),
+      highPrice: Math.max(...prices),
+      offerCount: prices.length,
+      availability: "https://schema.org/InStock",
+    };
+  }
+
 
 const TourDetail = () => {
   const { slug } = useParams<{ slug: string }>();
