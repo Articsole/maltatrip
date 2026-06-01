@@ -92,7 +92,20 @@ const TourDetail = () => {
 
   return (
     <main className="min-h-screen bg-background">
+      <Helmet>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="product" />
+        <meta name="twitter:title" content={seo.title} />
+        <meta name="twitter:description" content={seo.description} />
+        <script type="application/ld+json">{JSON.stringify(productJsonLd)}</script>
+      </Helmet>
       <LanguageSwitcher />
+
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <Link
