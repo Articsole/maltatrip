@@ -15,8 +15,10 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full object-cover"
         width={1920}
         height={1080}
+        fetchPriority="high"
+        decoding="async"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/20 to-foreground/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-foreground/70" />
       
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
         <div className="flex items-center justify-center gap-2 mb-6">
