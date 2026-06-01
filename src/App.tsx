@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound.tsx";
 import BoatRentalMalta from "./pages/BoatRentalMalta.tsx";
 import BoatTripsMalta from "./pages/BoatTripsMalta.tsx";
 import BusAndBoatTourMalta from "./pages/BusAndBoatTourMalta.tsx";
+import ThingsToDoInMalta from "./pages/ThingsToDoInMalta.tsx";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/boat-rental-malta" element={<BoatRentalMalta />} />
             <Route path="/boat-trips-malta" element={<BoatTripsMalta />} />
             <Route path="/bus-and-boat-tour-malta" element={<BusAndBoatTourMalta />} />
+            <Route path="/things-to-do-in-malta" element={<ThingsToDoInMalta />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
