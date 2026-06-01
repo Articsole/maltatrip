@@ -75,14 +75,6 @@ const TourDetail = () => {
     };
   }
 
-
-const TourDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const { t } = useLanguage();
-
-  const category = slug ? tourCategories[slug] : undefined;
-  if (!category) return <Navigate to="/" replace />;
-
   const openWhatsApp = (message: string) => {
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
@@ -96,6 +88,7 @@ const TourDetail = () => {
     if (!suffixKey) return price;
     return `${price} ${t(suffixKey)}`;
   };
+
 
   return (
     <main className="min-h-screen bg-background">
