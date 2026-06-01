@@ -27,9 +27,11 @@ const ExperienceCard = ({
 
   const phoneNumber = "+35699822911";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(waMessage || "")}`;
+  const href = waMessage ? whatsappUrl : `/tour/${slug}`;
+  const ctaLabel = waMessage ? t("exp.bookNow") : t("exp.viewOptions");
 
-  const CardContent = (
-    <div className="group bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 opacity-0 animate-fade-up border border-border">
+  const inner = (
+    <>
       <div className="relative h-64 overflow-hidden">
         <img
           src={image}
@@ -62,18 +64,16 @@ const ExperienceCard = ({
           </div>
         )}
 
-        <a
-          href={waMessage ? whatsappUrl : `/tour/${slug}`}
-          target={waMessage ? "_blank" : undefined}
-          rel={waMessage ? "noopener noreferrer" : undefined}
-          className="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary/90 text-primary-foreground font-body font-semibold py-3 rounded-xl transition-all duration-300 group-hover:scale-[1.02]"
-        >
-          {waMessage ? t("exp.bookNow") : t("exp.viewOptions")}
+        <span className="flex items-center justify-center gap-2 w-full bg-primary group-hover:bg-primary/90 text-primary-foreground font-body font-semibold py-3 rounded-xl transition-all duration-300 group-hover:scale-[1.02]">
+          {ctaLabel}
           <ChevronRight className="w-5 h-5" />
-        </a>
+        </span>
       </div>
-    </div>
+    </>
   );
+
+  const className =
+    "group block bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 opacity-0 animate-fade-up border border-border";
 
   if (waMessage) {
     return (
@@ -81,10 +81,11 @@ const ExperienceCard = ({
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="block"
+        className={className}
         style={{ animationDelay: `${delay}ms` }}
+        aria-label={ctaLabel + " — " + t(titleKey)}
       >
-        {CardContent}
+        {inner}
       </a>
     );
   }
@@ -92,10 +93,11 @@ const ExperienceCard = ({
   return (
     <Link
       to={`/tour/${slug}`}
-      className="block"
+      className={className}
       style={{ animationDelay: `${delay}ms` }}
+      aria-label={ctaLabel + " — " + t(titleKey)}
     >
-      {CardContent}
+      {inner}
     </Link>
   );
 };

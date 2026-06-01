@@ -1,0 +1,11 @@
+# Malta Trip
+
+> Boat trips, private charters, island bus tours and Gozo quad/jeep adventures across Malta. Booking is handled directly via WhatsApp.
+
+## Pages
+
+- [Home](/): Overview of all Malta experiences with booking via WhatsApp.
+- [Boat Tours](/tour/boat): Day trips to Comino, the Blue Lagoon and Gozo, plus Grand Harbour cruises.
+- [Private Boat Charters](/tour/private-boat): Personalised private boat trips around Malta and its islands.
+- [Bus Tours](/tour/bus): Guided North Malta, South Malta and Gozo bus tours.
+- [Gozo Adventures](/tour/gozo): Quad, buggy and jeep tours exploring the island of Gozo.

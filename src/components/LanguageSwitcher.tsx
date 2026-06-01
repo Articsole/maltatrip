@@ -35,7 +35,7 @@ const LanguageSwitcher = () => {
       >
         <Globe className="w-4 h-4 text-primary" />
         <span>{flags[language]}</span>
-        <span className="hidden sm:inline">{languageNames[language]}</span>
+        <span className="sr-only sm:not-sr-only sm:inline">{languageNames[language]}</span>
       </button>
 
       {open && (
